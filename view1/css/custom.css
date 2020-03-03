@@ -495,7 +495,7 @@ label {
   line-height: 20px; }
 
 .backgroundclr {
-  background-color: #f3f3f3; }
+  background-color: #000000; }
 
 .tpbanner_align {
   margin: 10px 0 10px 0; }
@@ -516,10 +516,10 @@ label {
   border: 0; }
 
 .header_icons {
-  color: #C4C4C4; }
+  color: white; }
 
 .header_nav > li.active a, .header_icons:hover {
-  color: #e36480; }
+  color: #ff7800; }
 
 @media (min-width: 1028px) {
   .navbar-nav {
@@ -556,7 +556,7 @@ label {
 
 .header_nav > li > a:hover {
   background-color: transparent;
-  color: #E65F7D; }
+  color: #ff7800; }
 
 .button_align {
   padding-right: 3px;
@@ -576,7 +576,7 @@ label {
   width: 10px; }
 
 .header_bg:hover {
-  background-color: #e36480; }
+  background-color: #ffb700; }
 
 .gplus_icon {
   height: 18px; }

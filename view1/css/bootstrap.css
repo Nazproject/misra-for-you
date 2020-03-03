@@ -33,7 +33,8 @@
   font-size: 12px; }
 
 .font13 {
-  font-size: 13px; }
+  font-size: 11px;
+  font-weight:500 }
 
 .color_black {
   color: #393838; }
@@ -1379,7 +1380,7 @@ a.text-success:focus {
   color: #65882e; }
 
 .text-info {
-  color: #4b3065; }
+  color: black; }
 
 a.text-info:hover,
 a.text-info:focus {
@@ -1417,7 +1418,7 @@ a.bg-success:focus {
   background-color: #65882e; }
 
 .bg-info {
-  background-color: #4b3065; }
+  background-color: #ff7800; }
 
 a.bg-info:hover,
 a.bg-info:focus {
@@ -5950,7 +5951,7 @@ textarea {
   color: #4b3065 !important; }
 
 .dropdown-menu > li > a:hover {
-  background-color: #4b3065;
+  background-color: #ff7800;
   color: #fff !important; }
 
 .nav > li > a:focus {
