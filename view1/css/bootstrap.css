@@ -5901,8 +5901,8 @@ a:focus {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #fff;
-  background-color: #4b3065;
-  border: 1px solid #4b3065; }
+  background-color: #ff7800;
+  border: 1px solid #ff7800; }
 
 .nav-tabs > li > a {
   margin-right: 0;
