@@ -9,7 +9,7 @@
             <ul>
                 <li data-index="rs-1" data-transition="random-premium" data-slotamount="default" data-easein="Power4.easeInOut"
                     data-easeout="Power4.easeInOut" data-masterspeed="1000" data-rotate="0">
-                    <img src="images/astro_slider_bg1.jpg" alt="image-missing" data-bgposition="center center" data-bgfit="cover"
+                    <img src="{{ asset('frontend/frontend/images/astro_slider_bg1.jpg') }}" alt="image-missing" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="10" data-no-retina
                          data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100"
                          data-scaleend="112" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
@@ -52,7 +52,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/sun.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/sun.png') }}" alt="image-missing">
                     </div>
                     <div class="tp-caption lfb hidden-xs"
                          data-x="680" data-hoffset="0"
@@ -62,7 +62,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/4.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/4.png') }}" alt="image-missing">
                     </div>
                     <div class="tp-caption lfb hidden-xs"
                          data-x="390" data-hoffset="0"
@@ -72,7 +72,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/6.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/6.png') }}" alt="image-missing">
                     </div>
                     <div class="tp-caption lft hidden-xs"
                          data-x="760" data-hoffset="0"
@@ -82,7 +82,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/5.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/5.png') }}" alt="image-missing">
                     </div>
                     <div class="tp-caption lfr hidden-xs"
                          data-x="300" data-hoffset="0"
@@ -92,7 +92,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/2.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/2.png') }}" alt="image-missing">
                     </div>
                     <div class="tp-caption lft hidden-xs"
                          data-x="900" data-hoffset="0"
@@ -102,7 +102,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/8.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/8.png') }}" alt="image-missing">
                     </div>
                     <div class="tp-caption lfr hidden-xs"
                          data-x="50" data-hoffset="0"
@@ -112,7 +112,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/3.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/3.png') }}" alt="image-missing">
                     </div>
                     <div class="tp-caption lfr hidden-xs"
                          data-x="240" data-hoffset="0"
@@ -122,7 +122,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/7.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/7.png') }}" alt="image-missing">
                     </div>
                     <div class="tp-caption lfb hidden-md hidden-xs hidden-sm"
                          data-x="800" data-hoffset="0"
@@ -132,7 +132,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/6.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/6.png') }}" alt="image-missing">
                     </div>
 
                     <div class="tp-caption grey_heavy_72 sfr tp-resizeme rs-parallaxlevel-0 hidden-xs index_btn" data-x="center"
@@ -148,7 +148,7 @@
                 </li>
                 <li data-index="rs-2" data-transition="random-premium" data-slotamount="default" data-easein="Power4.easeInOut"
                     data-easeout="Power4.easeInOut" data-masterspeed="1000" data-rotate="0">
-                    <img src="images/astro_slider2.jpg" alt="image-missing" data-bgposition="center center" data-bgfit="cover"
+                    <img src="{{ asset('frontend/images/astro_slider2.jpg') }}" alt="image-missing" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="10" data-no-retina
                          data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100"
                          data-scaleend="112" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
@@ -164,7 +164,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/leo-sign1.png" alt="image-missing">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/leo-sign1.png') }}" alt="image-missing">
                     </div>
 
                     <div class="tp-caption home_title sfl tp-resizeme"
@@ -216,7 +216,7 @@
                          data-easing="Power4.easeOut"
                          data-endspeed="400"
                          data-endeasing="Power1.easeIn"
-                         style="z-index: 11"><img src="images/background.png" alt="image-missing" width="1342">
+                         style="z-index: 11"><img src="{{ asset('frontend/images/background.png') }}" alt="image-missing" width="1342">
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -250,7 +250,7 @@
                     <div class="row home_align">
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                             <div class="sign_circle bg-aries">
-                                <img src="images/aries-sign.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/aries-sign.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -261,7 +261,7 @@
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                             <div class="sign_circle bg-taurus">
-                                <img src="images/taurus.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/taurus.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -273,7 +273,7 @@
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                             <div class="sign_circle bg-gemini">
-                                <img src="images/gemini.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/gemini.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -285,7 +285,7 @@
                         <div class="clearfix visible-sm-block"></div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                             <div class="sign_circle bg-cancer">
-                                <img src="images/cancer.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/cancer.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -297,7 +297,7 @@
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                             <div class="sign_circle bg-leo">
-                                <img src="images/leo.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/leo.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -308,7 +308,7 @@
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                             <div class="sign_circle bg-virgo">
-                                <img src="images/virgo.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/virgo.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -320,7 +320,7 @@
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                             <div class="sign_circle bg-libra">
-                                <img src="images/libra.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/libra.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -331,7 +331,7 @@
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                             <div class="sign_circle bg-scorpio">
-                                <img src="images/scorpio.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/scorpio.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -343,7 +343,7 @@
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                             <div class="sign_circle bg-sagittarius">
-                                <img src="images/sagittarius.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/sagittarius.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -355,7 +355,7 @@
                         <div class="clearfix visible-sm-block"></div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                             <div class="sign_circle bg-capricorn">
-                                <img src="images/capricorn.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/cimages/capricorn.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -367,7 +367,7 @@
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                             <div class="sign_circle bg-aquarius">
-                                <img src="images/aquarius.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/aquarius.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -379,7 +379,7 @@
                         <div class="col-md-2 col-sm-4 col-xs-6 wow fadeInDown pic_margin" data-wow-duration="1s"
                              data-wow-delay="0.2s">
                             <div class="sign_circle bg-pisces">
-                                <img src="images/pisces.png" alt="image-missing" class="rotate">
+                                <img src="{{ asset('frontend/images/pisces.png') }}" alt="image-missing" class="rotate">
                             </div>
                             <a href="signs_single_post.html" class="main">
                                 <div class="sign_card text-center signs_bg">
@@ -488,7 +488,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="btn_adjust">
-                            <a href="index-2.html" class="btn btn-info btn-md btn_align">Show My Matches
+                            <a href="{{ asset('frontend/index-2.html') }}" class="btn btn-info btn-md btn_align">Show My Matches
                                 <i class="fa fa-search btn_icon"></i>
                             </a>
                         </div>
@@ -555,7 +555,7 @@
                 <hr>
                 <div class="row common_margin">
                     <div class="col-md-4 col-sm-3 col-xs-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <img src="images/card.jpg" class="img-responsive p-t-5" alt="card missing"/>
+                        <img src="{{ asset('frontend/images/card.jpg') }}" class="img-responsive p-t-5" alt="card missing"/>
                     </div>
                     <div class="col-md-8 col-sm-9 col-xs-8 games_content_align">
                         <h4 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">THE CHARIOT</h4>
@@ -564,7 +564,7 @@
                             traditional values and morals of development. He is the wisely teacher / counselor
                             guiding the ones who won’t give up or the ones who are not the...
                         </p>
-                        <a href="signs_single_post.html" class="text-primary home_view">Read More</a>
+                        <a href="{{ asset('frontend/signs_single_post.html') }}" class="text-primary home_view">Read More</a>
                     </div>
                 </div>
             </div>
@@ -673,7 +673,7 @@
                 <p class="text-info">Need quick, fun answers and advice about your love life? Ask the Magic Love
                     Ball...
                 </p>
-                <img src="images/home_pic1.png" class="img-responsive" alt="Image missing"/>
+                <img src="{{ asset('frontend/images/home_pic1.png') }}" class="img-responsive" alt="Image missing"/>
             </div>
             <div class="col-md-4 m-t-40 button_margin wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
                 <h1 class="text-primary text-center">What 2016 Brings You</h1>
@@ -682,22 +682,22 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <ul class="footer_text_height">
-                            <li><a href="signs_single_post.html" class="text-info">Aries</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Taurus</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Gemini</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Cancer</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Leo</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Virgo</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Aries</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Taurus</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Gemini</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Cancer</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Leo</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Virgo</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <ul class="footer_text_height">
-                            <li><a href="signs_single_post.html" class="text-info">Libra</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Scorpio</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Sagittarius</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Capricorn</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Aquarius</a></li>
-                            <li><a href="signs_single_post.html" class="text-info">Pisces</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Libra</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Scorpio</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Sagittarius</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Capricorn</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Aquarius</a></li>
+                            <li><a href="{{ asset('frontend/signs_single_post.html') }}" class="text-info">Pisces</a></li>
                         </ul>
                     </div>
                 </div>
@@ -707,7 +707,7 @@
                 <hr>
                 <p class="text-info">Are your Sun Signs a perfect match, or will it take effort to make it work?</p>
                 <a href="love_compatibility.html">
-                    <img src="images/home_pic.png" class="img-responsive home_pic1" alt="Image missing"/>
+                    <img src="{{ asset('frontend/images/home_pic.png') }}" class="img-responsive home_pic1" alt="Image missing"/>
                     <div class="blog_text blog_text1"></div>
                     <span class="text_image text-white">Read more</span></a>
             </div>
