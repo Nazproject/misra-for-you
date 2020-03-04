@@ -54,9 +54,10 @@ TABLE OF CONTENT
   color: #e36480; }
 
 .tab-content {
-  border: 1px solid #ddd;
+  border: 1px solid #ff7800;
   padding: 20px;
-  border-radius: 3px; }
+  border-radius: 0px 20px 20px 20px;
+  box-shadow: 3px 5px #bf6413; }
 
 .lists ul {
   list-style-type: none;
