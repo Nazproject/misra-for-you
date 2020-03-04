@@ -117,8 +117,12 @@
       </li> -->
       <li class="nav-item dropdown">
         <a href="#" class="nav-link" data-toggle="dropdown">
-          <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
-          <span class="hidden-xs">{{ @Auth::user()->name }}</span>
+          <div class="user-panel d-flex">
+            <div class="image">
+              <img src="{{ asset('dist/img/user2-160x160.jpg') }}" styleclass="img-circle" alt="User Image">
+              <span class="hidden-xs">{{ @Auth::user()->name }}</span>
+            </div>
+          </div>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <a href="#" class="btn btn-default dropdown-item">
@@ -127,7 +131,7 @@
           <div class="dropdown-divider"></div>
           <a href="{{ route('logout') }}" class="btn btn-default dropdown-item"
              onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-             Sign out
+             <i class="fas fa-lock mr-2"></i>Sign out
           </a>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               {{ csrf_field() }}
@@ -152,5 +156,36 @@
     
   </nav>
   <!-- /.navbar -->
+ <!--  <ul class="navbar-nav">
+      <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
+              <span class="hidden-xs">{{ @Auth::user()->name }}</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="user-header">
+                <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+
+                <p>
+                  {{ @Auth::user()->name }}
+                  <small>Member since Nov. 2017</small>
+                </p>
+              </li>
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-left">
+                  <a href="{{ route('logout') }}" class="btn btn-default btn-flat"
+                     onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sign out
+                  </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      {{ csrf_field() }}
+                  </form>
+                </div>
+              </li>
+            </ul>
+      </li>
+    </ul> -->
 
   
