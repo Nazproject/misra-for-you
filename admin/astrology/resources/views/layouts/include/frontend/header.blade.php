@@ -33,7 +33,7 @@
                 <div class="col-sm-2 col-xs-2 head_signs">
                     <a href="vasthu.html">
                         <div class="bg-info header_bg center-block">
-                            <img src="images/home1.png" alt="Image missing">
+                            <img src="{{ asset('frontend/images/home1.png') }}" alt="Image missing">
                         </div>
                         <div class="text-center info1 font13 hidden-xs">Vasthu Shasthra</div>
                     </a>
@@ -41,7 +41,7 @@
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">
-                            <img src="images/calendar.png" alt="Image missing">
+                            <img src="{{ asset('frontend/images/calendar.png') }}" alt="Image missing">
                         </div>
                         <div class="text-center info1 font13 hidden-xs">Appointment</div>
                     </a>
@@ -49,7 +49,7 @@
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">
-                            <img src="images/heart.png" alt="Image missing">
+                            <img src="{{ asset('frontend/images/heart.png') }}" alt="Image missing">
                         </div>
                         <div class="text-center info1 font13 hidden-xs">Love Tarot</div>
                     </a>
@@ -58,7 +58,7 @@
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">
-                            <img src="images/man-with-tie.png" alt="Image missing">
+                            <img src="{{ asset('frontend/images/man-with-tie.png') }}" alt="Image missing">
                         </div>
                         <div class="text-center info1 font13 hidden-xs">Career Match</div>
                     </a>
@@ -66,7 +66,7 @@
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">
-                            <img src="images/yin-and-yang.png" alt="Image missing">
+                            <img src="{{ asset('frontend/images/yin-and-yang.png') }}" alt="Image missing">
                         </div>
                         <div class="text-center info1 font13 hidden-xs">Ying Yang</div>
                     </a>
@@ -74,7 +74,7 @@
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">
-                            <img src="images/calendar.png" alt="Image missing">
+                            <img src="{{ asset('frontend/images/calendar.png') }}" alt="Image missing">
                         </div>
                         <div class="text-center info1 font13 hidden-xs">Daily Tarot</div>
                     </a>
@@ -94,8 +94,8 @@
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </span>
                     </button>
-                    <a href="index-2.html">
-                        <img src="images/leo-sign1.png" alt="logo missing" class="brand_name"> <span
+                    <a href="{{ asset('frontend/index-2.html') }}">
+                        <img src="{{ asset('frontend/images/leo-sign1.png') }}" alt="logo missing" class="brand_name"> <span
                             class="text-info font42">Astrology</span>
                     </a>
                     <p class="brand_name text-primary font12 head_info">KNOW YOUR SIGN</p>
@@ -105,42 +105,42 @@
                      id="myNavbar">
                     <ul class="nav navbar-nav header_nav">
                         <li class="header_li active">
-                            <a href="index-2.html" class="text-info">
+                            <a href="{{ asset('frontend/index-2.html') }}" class="text-info">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li class="header_li">
-                            <a href="signs.html" class="text-info">Astrology Signs</a>
+                            <a href="{{ asset('frontend/signs.html') }}" class="text-info">Astrology Signs</a>
                         </li>
                         <li class="header_li">
-                            <a href="gemstones.html" class="text-info">Gemstones</a>
+                            <a href="{{ asset('frontend/gemstones.html') }}" class="text-info">Gemstones</a>
                         </li>
 
                         <li class="header_li">
-                            <a href="love_compatibility.html" class="text-info"><i class="fa fa-heart"></i>  Compatibility</a>
+                            <a href="{{ asset('frontend/love_compatibility.html') }}" class="text-info"><i class="fa fa-heart"></i>  Compatibility</a>
                         </li>
                         <li class="header_li">
-                            <a href="games.html" class="text-info">Games</a>
+                            <a href="{{ asset('frontend/games.html') }}" class="text-info">Games</a>
                         </li>
                         <li class="header_li">
-                            <a href="blog.html" class="text-info">Blog</a>
+                            <a href="{{ asset('frontend/blog.html') }}" class="text-info">Blog</a>
                         </li>
                         <li class="dropdown dropdown_modified">
                             <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Pages <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
                                 data-dropdown-out="fadeOut">
-                                <li><a href="index2.html">Home Page2</a></li>
-                                <li><a href="blog_single.html">Blog Single Post</a></li>
-                                <li><a href="blog_category.html">Blog Category</a></li>
-                                <li><a href="signs_single_post.html">Signs Single Page</a></li>
-                                <li><a href="gemstones_single.html">Gemstones Single Page</a></li>
-                                <li><a href="love_compatibility_result.html">Love Compatibility Result</a></li>
-                                <li><a href="elements.html">Elements</a></li>
+                                <li><a href="{{ asset('frontend/index2.html') }}">Home Page2</a></li>
+                                <li><a href="{{ asset('frontend/blog_single.html') }}">Blog Single Post</a></li>
+                                <li><a href="{{ asset('frontend/blog_category.html') }}">Blog Category</a></li>
+                                <li><a href="{{ asset('frontend/signs_single_post.html') }}">Signs Single Page</a></li>
+                                <li><a href="{{ asset('frontend/gemstones_single.html') }}">Gemstones Single Page</a></li>
+                                <li><a href="{{ asset('frontend/love_compatibility_result.html') }}">Love Compatibility Result</a></li>
+                                <li><a href="{{ asset('frontend/elements.html') }}">Elements</a></li>
                             </ul>
                         </li>
                         <li class="header_li">
-                            <a href="contact_us.html" class="text-info">Contact Us</a>
+                            <a href="{{ asset('frontend/contact_us.html') }}" class="text-info">Contact Us</a>
                         </li>
                     </ul>
                 </div>
