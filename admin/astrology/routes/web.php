@@ -1,5 +1,5 @@
 <?php
-Route::view('/', 'welcome');
+Route::view('/', 'home');
 Auth::routes();
 
 Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm');
@@ -13,5 +13,7 @@ Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
 //Route::post('/register/blogger', 'Auth\RegisterController@createBlogger');
 
 Route::view('/home', 'home')->middleware('auth');
+Route::post('/admin', 'Auth\RegisterController@createAdmin');
+
 Route::view('/admin', 'dashboard');
 //Route::view('/blogger', 'blogger');
