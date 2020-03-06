@@ -647,10 +647,10 @@ label {
   top: 45px; }
 
 .sign_card {
-  background-color: #eaeaea;
+  background-color: #ff7800;
   padding: 55px 0 20px 0;
   border-radius: 5px;
-  border-bottom: 5px solid #E5E5E5; }
+  border-bottom: 5px solid  #bf6413; }
 
 .sign_btnpadding {
   padding: 12px 0;
@@ -663,7 +663,7 @@ label {
   font-size: 11px; }
 
 .signs_bg:hover {
-  background-color: #4b3065;
+  background-color: #e36480;
   border-radius: 5px 5px 10px 10px; }
 
 .signs_bg:hover .signs_clr {

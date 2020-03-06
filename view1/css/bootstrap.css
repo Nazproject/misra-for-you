@@ -46,76 +46,76 @@
   color: #fff; }
 
 .bg-aries {
-  background-color: #f34235; }
+  background-color: black; }
 
 .text-aries {
-  color: #f34235; }
+  color: black; }
 
 .bg-taurus {
-  background-color: #2196f2; }
+  background-color: black; }
 
 .text-taurus {
-  color: #2196f2; }
+  color: black; }
 
 .bg-gemini {
-  background-color: #9c27b0; }
+  background-color: black; }
 
 .text-gemini {
-  color: #9c27b0; }
+  color: black; }
 
 .bg-cancer {
-  background-color: #019486; }
+  background-color: black; }
 
 .text-cancer {
-  color: #019486; }
+  color: black; }
 
 .bg-leo {
-  background-color: #88bf43; }
+  background-color: black; }
 
 .text-leo {
-  color: #88bf43; }
+  color: black; }
 
 .bg-virgo {
-  background-color: #e91e63; }
+  background-color: black; }
 
 .text-virgo {
-  color: #e91e63; }
+  color: black; }
 
 .bg-libra {
-  background-color: #3f51b4; }
+  background-color: black; }
 
 .text-libra {
-  color: #3f51b4; }
+  color: black; }
 
 .bg-scorpio {
-  background-color: #aab927; }
+  background-color: black; }
 
 .text-scorpio {
-  color: #aab927; }
+  color: black; }
 
 .bg-sagittarius {
-  background-color: #e8a709; }
+  background-color: black; }
 
 .text-sagittarius {
-  color: #e8a709; }
+  color: black; }
 
 .bg-capricorn {
-  background-color: #725347; }
+  background-color:black; }
 
 .text-capricorn {
-  color: #725347; }
+  color: black; }
 
 .bg-aquarius {
-  background-color: #01bad2; }
+  background-color: black; }
 
 .text-aquarius {
-  color: #01bad2; }
+  color: black; }
 
 .bg-pisces {
-  background-color: #5b7582; }
+  background-color: black;}
 
 .text-pisces {
-  color: #5b7582; }
+  color: black; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -5879,7 +5879,9 @@ a:focus {
   color: #494949; }
 
 .bg-white {
-  background-color: #fff; }
+  background-color: #fff; 
+  border: 2px solid black;
+  box-shadow: 3px 3px #635e5e;}
 
 .panel-default > .panel-heading {
   color: #4b3065;
