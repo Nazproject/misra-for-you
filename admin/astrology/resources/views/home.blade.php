@@ -9,7 +9,7 @@
             <ul>
                 <li data-index="rs-1" data-transition="random-premium" data-slotamount="default" data-easein="Power4.easeInOut"
                     data-easeout="Power4.easeInOut" data-masterspeed="1000" data-rotate="0">
-                    <img src="{{ asset('frontend/frontend/images/astro_slider_bg1.jpg') }}" alt="image-missing" data-bgposition="center center" data-bgfit="cover"
+                    <img src="{{ asset('frontend/images/astro_slider_bg1.jpg') }}" alt="image-missing" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="10" data-no-retina
                          data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="100"
                          data-scaleend="112" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"

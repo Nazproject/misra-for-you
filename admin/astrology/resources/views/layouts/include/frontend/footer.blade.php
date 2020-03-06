@@ -20,7 +20,7 @@
                             <span class="input-group-addon subscribe_align">
         <button type="submit" class="subscribe btn btn-sm ">
                         <span>
-                            <img src="images/mail-sent.png" alt="mailicon">
+                            <img src="{{ asset('frontend/images/mail-sent.png') }}" alt="mailicon">
                         </span>
                             </button>
                         </span>
@@ -47,7 +47,7 @@
                     <li><a href="#">My Money Horoscope</a></li>
                     <li><a href="#">My Food Horoscope</a></li>
                     <li><a href="#">My Pet Horoscope</a></li>
-                    <li><a href="love_compatibility_result.html">My Love Compatibility</a></li>
+                    <li><a href="{{ asset('frontend/love_compatibility_result.html') }}">My Love Compatibility</a></li>
                 </ul>
                 <h5 class="m-t-40">EASTERN ASTROLOGY</h5>
                 <hr>
@@ -62,26 +62,26 @@
                 <h5>UNIQUE TAROT READINGS</h5>
                 <hr>
                 <ul>
-                    <li><a href="games.html">Daily Career Tarot</a></li>
-                    <li><a href="games.html">Instant Answer Tarot</a></li>
-                    <li><a href="games.html">Power Tarot</a></li>
-                    <li><a href="games.html">Angel Tarot Reading</a></li>
-                    <li><a href="games.html">Zen Tarot Reading</a></li>
-                    <li><a href="games.html">White Magic Tarot</a></li>
-                    <li><a href="games.html">Egyptian Tarot</a></li>
+                    <li><a href="{{ asset('frontend/games.html') }}">Daily Career Tarot</a></li>
+                    <li><a href="{{ asset('frontend/games.html') }}">Instant Answer Tarot</a></li>
+                    <li><a href="{{ asset('frontend/games.html') }}">Power Tarot</a></li>
+                    <li><a href="{{ asset('frontend/games.html') }}">Angel Tarot Reading</a></li>
+                    <li><a href="{{ asset('frontend/games.html') }}">Zen Tarot Reading</a></li>
+                    <li><a href="{{ asset('frontend/games.html') }}">White Magic Tarot</a></li>
+                    <li><a href="{{ asset('frontend/games.html') }}">Egyptian Tarot</a></li>
                 </ul>
                 <h5 class="m-t-40">FORECAST TAROT READING</h5>
                 <hr>
                 <ul>
-                    <li><a href="signs_single_post.html">Daily Tarot Reading</a></li>
-                    <li><a href="signs_single_post.html">Today / Tomorrow Tarot</a></li>
-                    <li><a href="signs_single_post.html">Weekly Tarot Reading</a></li>
+                    <li><a href="{{ asset('frontend/signs_single_post.html') }}">Daily Tarot Reading</a></li>
+                    <li><a href="{{ asset('frontend/signs_single_post.html') }}">Today / Tomorrow Tarot</a></li>
+                    <li><a href="{{ asset('frontend/signs_single_post.html') }}">Weekly Tarot Reading</a></li>
                 </ul>
                 <h5 class="m-t-40">LOVE TAROT READING</h5>
                 <hr>
                 <ul>
-                    <li><a href="love_compatibility.html">Love Potential Tarot</a></li>
-                    <li><a href="love_compatibility.html">Breakup Tarot Reading</a></li>
+                    <li><a href="{{ asset('frontend/love_compatibility.html') }}">Love Potential Tarot</a></li>
+                    <li><a href="{{ asset('frontend/love_compatibility.html') }}">Breakup Tarot Reading</a></li>
                 </ul>
             </div>
             <div class="clearfix visible-sm-block"></div>
@@ -206,23 +206,23 @@
                 <hr>
                 <div class="row">
                     <div class="col-sm-12 m-t-10">
-                        <img src="images/270.png" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/270.png') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
                 <div class="row m-t-20">
                     <div class="col-xs-6">
-                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/126.png') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                     <div class="col-xs-6">
-                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/126.png') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
                 <div class="row m-t-20">
                     <div class="col-xs-6">
-                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/126.png') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                     <div class="col-xs-6">
-                        <img src="images/126.png" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/126.png') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
             </div>
@@ -231,7 +231,7 @@
             <hr>
         </div>
         <div class="row text-center">
-            <p>made with &nbsp;<img src="images/heartf.png" alt="heart loading"/>&nbsp; by
+            <p>made with &nbsp;<img src="{{ asset('frontend/images/heartf.png') }}" alt="heart loading"/>&nbsp; by
                 <a href="https://themeforest.net/user/jyostna"
                    class="footer_color_variant">jyostna</a></p>
         </div>
