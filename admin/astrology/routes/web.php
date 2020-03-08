@@ -12,8 +12,9 @@ Route::post('/login/admin', 'Auth\LoginController@adminLogin');
 Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
 //Route::post('/register/blogger', 'Auth\RegisterController@createBlogger');
 
+//Route::view('/home', 'home')->middleware('auth');
 Route::view('/home', 'home')->middleware('auth');
-Route::post('/admin', 'Auth\RegisterController@createAdmin');
 
-Route::view('/admin', 'dashboard');
+
+Route::get('/admin', 'AdminController@index');
 //Route::view('/blogger', 'blogger');
