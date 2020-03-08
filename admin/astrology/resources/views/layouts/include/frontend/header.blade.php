@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xs-12 tpbanner_align">
-                <a href="#" class="header_border1 hidden-xs font12">Advertise With Us</a>
-                <div class="header_border hidden-xs font12">Language:
+                <a href="#" class="header_border1 hidden-xs font12" style="color:white;">Advertise With Us</a>
+                <div class="header_border hidden-xs font12" style="color:white;">Language:
                     <ul>
                         <li class="dropdown lang_dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">EN <span class="caret"></span></a>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color:#ff7800;">EN <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Hindi</a></li>
                                 <li><a href="#">English</a></li>
@@ -15,7 +15,7 @@
                     </ul>
                 </div>
                 <div class="clearfix visible-xs-block"></div>
-                <span class="header_border header_text hidden-xs font12">Follow Us</span>
+                <span class="header_border header_text hidden-xs font12" style="color:white;">Follow Us</span>
                 <span class="head_icons"><a href="#"><i class="fa fa-facebook-square header_icons fa-lg"></i></a>
                       <a href="#"><i class="fa fa-twitter-square header_icons fa-lg"></i></a>
                       <a href="#"><i class="fa fa-google-plus-square header_icons fa-lg" aria-hidden="true"></i></a>
@@ -31,19 +31,44 @@
             <div class="clearfix visible-sm-block"></div>
             <div class="row">
                 <div class="col-sm-2 col-xs-2 head_signs">
-                    <a href="vasthu.html">
+                    <a href="#">
                         <div class="bg-info header_bg center-block">
-                            <img src="{{ asset('frontend/images/home1.png') }}" alt="Image missing">
+                            <img src="{{ asset('frontend/images/cancer.png') }}" alt="Image missing">
                         </div>
-                        <div class="text-center info1 font13 hidden-xs">Vasthu Shasthra</div>
+                        <div class="text-center info1 font13">Rashifal</div>
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">
-                            <img src="{{ asset('frontend/images/calendar.png') }}" alt="Image missing">
+                            <img src="{{ asset('frontend/images/kundli3.png') }}" alt="Image missing" style="width: 20px; height: 20px;">
                         </div>
-                        <div class="text-center info1 font13 hidden-xs">Appointment</div>
+                        <div class="text-center info1 font13 ">Kundli</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="{{ asset('frontend/images/leo.png') }}" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 ">Horoscope</div>
+                    </a>
+                </div>
+
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="{{ asset('frontend/images/panchang4.png') }}" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 ">Panchang</div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="{{ asset('frontend/images/man-with-tie.png') }}" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 ">Career</div>
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
@@ -51,32 +76,7 @@
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/heart.png') }}" alt="Image missing">
                         </div>
-                        <div class="text-center info1 font13 hidden-xs">Love Tarot</div>
-                    </a>
-                </div>
-
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="{{ asset('frontend/images/man-with-tie.png') }}" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 hidden-xs">Career Match</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="{{ asset('frontend/images/yin-and-yang.png') }}" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 hidden-xs">Ying Yang</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="{{ asset('frontend/images/calendar.png') }}" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 hidden-xs">Daily Tarot</div>
+                        <div class="text-center info1 font13 ">Love</div>
                     </a>
                 </div>
             </div>
@@ -87,60 +87,65 @@
     <nav class="navbar">
         <div class="container">
             <div class="row">
+                
                 <div class="navbar-header col-md-4 col-sm-5 col-xs-12 nav_head">
+                    
                     <button type="button" class="navbar-toggle m-t-20 font18" data-toggle="collapse"
                             data-target="#myNavbar">
                         <span>
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </span>
                     </button>
-                    <a href="{{ asset('frontend/index-2.html') }}">
-                        <img src="{{ asset('frontend/images/leo-sign1.png') }}" alt="logo missing" class="brand_name"> <span
-                            class="text-info font42">Astrology</span>
+                    <a href="#">
+                        <img src="{{ asset('frontend/images/logo2.png') }}" alt="logo missing" class="brand_name" style="height: 90px; width:90px;"> <span
+                            class="text-info font42"></span>
                     </a>
-                    <p class="brand_name text-primary font12 head_info">KNOW YOUR SIGN</p>
+                    <p class="brand_name text-primary font12 head_info" style="font-family: samarkan; font-size:16px; color: black;">MISHRA 4 YOU</p>
 
-                </div>
+                </div>  
                 <div class="navbar-collapse collapse col-md-8 col-sm-7 col-xs-12 nav navbar-right nav_menubar"
                      id="myNavbar">
                     <ul class="nav navbar-nav header_nav">
                         <li class="header_li active">
-                            <a href="{{ asset('frontend/index-2.html') }}" class="text-info">
+                            <a href="#" class="text-info">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li class="header_li">
-                            <a href="{{ asset('frontend/signs.html') }}" class="text-info">Astrology Signs</a>
+                            <a href="#" class="text-info">2020</a>
                         </li>
                         <li class="header_li">
-                            <a href="{{ asset('frontend/gemstones.html') }}" class="text-info">Gemstones</a>
+                            <a href="#" class="text-info">Gemstones Report</a>
                         </li>
 
+
                         <li class="header_li">
-                            <a href="{{ asset('frontend/love_compatibility.html') }}" class="text-info"><i class="fa fa-heart"></i>  Compatibility</a>
+                            <a href="#" class="text-info"><i class="fa fa-heart"></i>Compatibility</a>
                         </li>
                         <li class="header_li">
-                            <a href="{{ asset('frontend/games.html') }}" class="text-info">Games</a>
+                            <a href="#" class="text-info">Lal Kitab</a>
                         </li>
                         <li class="header_li">
-                            <a href="{{ asset('frontend/blog.html') }}" class="text-info">Blog</a>
+                            <a href="#" class="text-info">Festivals</a>
                         </li>
+                        
+                       
                         <li class="dropdown dropdown_modified">
                             <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Pages <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
                                 data-dropdown-out="fadeOut">
-                                <li><a href="{{ asset('frontend/index2.html') }}">Home Page2</a></li>
-                                <li><a href="{{ asset('frontend/blog_single.html') }}">Blog Single Post</a></li>
-                                <li><a href="{{ asset('frontend/blog_category.html') }}">Blog Category</a></li>
-                                <li><a href="{{ asset('frontend/signs_single_post.html') }}">Signs Single Page</a></li>
-                                <li><a href="{{ asset('frontend/gemstones_single.html') }}">Gemstones Single Page</a></li>
-                                <li><a href="{{ asset('frontend/love_compatibility_result.html') }}">Love Compatibility Result</a></li>
-                                <li><a href="{{ asset('frontend/elements.html') }}">Elements</a></li>
+                                <li><a href="#">Home Page2</a></li>
+                                <li><a href="#">Blog Single Post</a></li>
+                                <li><a href="#">Blog Category</a></li>
+                                <li><a href="#">Signs Single Page</a></li>
+                                <li><a href="#">Gemstones Single Page</a></li>
+                                <li><a href="#">Love Compatibility Result</a></li>
+                                <li><a href="#">Elements</a></li>
                             </ul>
                         </li>
                         <li class="header_li">
-                            <a href="{{ asset('frontend/contact_us.html') }}" class="text-info">Contact Us</a>
+                            <a href="#" class="text-info">Misc</a>
                         </li>
                     </ul>
                 </div>
