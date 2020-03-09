@@ -56,7 +56,8 @@
    Contact Us | About Us | Feedback | Meet The Author | Top stories | Contribute Here</span>
   <br>
   <center>
-  <p> © Copyright 2020: All Rights Reserved Mishra4You </p></center>
+  <p> © Copyright 2020: All Rights Reserved Mishra4You </p>
+  </center>
 </div>
 <script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
 <script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>

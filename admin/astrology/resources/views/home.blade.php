@@ -682,7 +682,7 @@
                     <caption >Gemstones</caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="{{ asset('frontend/mages/shop2.png') }}i" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop2.png') }}" style="height: 126px; width: 126px;">
                     <caption >Rudraksh Mala</caption>
                 </div>
                </div>

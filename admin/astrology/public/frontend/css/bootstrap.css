@@ -33,7 +33,8 @@
   font-size: 12px; }
 
 .font13 {
-  font-size: 13px; }
+  font-size: 11px;
+  font-weight:500 }
 
 .color_black {
   color: #393838; }
@@ -45,76 +46,76 @@
   color: #fff; }
 
 .bg-aries {
-  background-color: #f34235; }
+  background-color: black; }
 
 .text-aries {
-  color: #f34235; }
+  color: black; }
 
 .bg-taurus {
-  background-color: #2196f2; }
+  background-color: black; }
 
 .text-taurus {
-  color: #2196f2; }
+  color: black; }
 
 .bg-gemini {
-  background-color: #9c27b0; }
+  background-color: black; }
 
 .text-gemini {
-  color: #9c27b0; }
+  color: black; }
 
 .bg-cancer {
-  background-color: #019486; }
+  background-color: black; }
 
 .text-cancer {
-  color: #019486; }
+  color: black; }
 
 .bg-leo {
-  background-color: #88bf43; }
+  background-color: black; }
 
 .text-leo {
-  color: #88bf43; }
+  color: black; }
 
 .bg-virgo {
-  background-color: #e91e63; }
+  background-color: black; }
 
 .text-virgo {
-  color: #e91e63; }
+  color: black; }
 
 .bg-libra {
-  background-color: #3f51b4; }
+  background-color: black; }
 
 .text-libra {
-  color: #3f51b4; }
+  color: black; }
 
 .bg-scorpio {
-  background-color: #aab927; }
+  background-color: black; }
 
 .text-scorpio {
-  color: #aab927; }
+  color: black; }
 
 .bg-sagittarius {
-  background-color: #e8a709; }
+  background-color: black; }
 
 .text-sagittarius {
-  color: #e8a709; }
+  color: black; }
 
 .bg-capricorn {
-  background-color: #725347; }
+  background-color:black; }
 
 .text-capricorn {
-  color: #725347; }
+  color: black; }
 
 .bg-aquarius {
-  background-color: #01bad2; }
+  background-color: black; }
 
 .text-aquarius {
-  color: #01bad2; }
+  color: black; }
 
 .bg-pisces {
-  background-color: #5b7582; }
+  background-color: black;}
 
 .text-pisces {
-  color: #5b7582; }
+  color: black; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -1379,7 +1380,7 @@ a.text-success:focus {
   color: #65882e; }
 
 .text-info {
-  color: #4b3065; }
+  color: black; }
 
 a.text-info:hover,
 a.text-info:focus {
@@ -1417,7 +1418,7 @@ a.bg-success:focus {
   background-color: #65882e; }
 
 .bg-info {
-  background-color: #4b3065; }
+  background-color: #ff7800; }
 
 a.bg-info:hover,
 a.bg-info:focus {
@@ -5878,7 +5879,9 @@ a:focus {
   color: #494949; }
 
 .bg-white {
-  background-color: #fff; }
+  background-color: #fff; 
+  border: 2px solid black;
+  box-shadow: 3px 3px #635e5e;}
 
 .panel-default > .panel-heading {
   color: #4b3065;
@@ -5900,8 +5903,8 @@ a:focus {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #fff;
-  background-color: #4b3065;
-  border: 1px solid #4b3065; }
+  background-color: #ff7800;
+  border: 1px solid #ff7800; }
 
 .nav-tabs > li > a {
   margin-right: 0;
@@ -5950,7 +5953,7 @@ textarea {
   color: #4b3065 !important; }
 
 .dropdown-menu > li > a:hover {
-  background-color: #4b3065;
+  background-color: #ff7800;
   color: #fff !important; }
 
 .nav > li > a:focus {

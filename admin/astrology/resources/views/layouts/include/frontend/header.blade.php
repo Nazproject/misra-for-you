@@ -20,7 +20,19 @@
                       <a href="#"><i class="fa fa-twitter-square header_icons fa-lg"></i></a>
                       <a href="#"><i class="fa fa-google-plus-square header_icons fa-lg" aria-hidden="true"></i></a>
                 </span>
+                <div class="hidden-xs font12" style="color:white;float: right;margin-right: -30px;">
+                    <ul style="list-style-type:none;">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="" style="color:#ff7800;">USER</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -79,6 +91,8 @@
                         <div class="text-center info1 font13 ">Love</div>
                     </a>
                 </div>
+
+                
             </div>
         </div>
     </div>
