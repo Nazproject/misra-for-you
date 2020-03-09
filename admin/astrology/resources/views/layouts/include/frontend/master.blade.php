@@ -50,6 +50,14 @@
   @yield('content')
 </div>
 @include('layouts.include.frontend.footer')
+<div class="container">
+  <span>Rashifal | Astrology | Kundli | Kundli Matching | Horoscope 2020 | Panchang | Career | Love | Gemstone Report | Lal Kitab | Love Calculator | Astrology Shop
+  Premium Publication | Celebrity Horoscope | Advertisement | Festivals | Zodiac Sign Finder | forecast 2020 | Blog | Choose language
+   Contact Us | About Us | Feedback | Meet The Author | Top stories | Contribute Here</span>
+  <br>
+  <center>
+  <p> © Copyright 2020: All Rights Reserved Mishra4You </p></center>
+</div>
 <script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
 <script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('frontend/vendors/select2/js/select2.min.js') }}"></script>

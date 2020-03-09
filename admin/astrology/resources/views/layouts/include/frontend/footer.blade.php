@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-md-6 col-xs-12 footer_section_align">
                 <span class="text-white font18">Get Your </span><span class="text-primary font24"> Daily Horoscope<span
-                    class="text-white font18">,</span> Daily Lovescope</span><span
-                    class="text-white font18"> and</span><span class="text-primary font24"> Daily Tarot </span> <span
+                    class="text-white font18">,</span> Daily Careerscope</span><span
+                    class="text-white font18"> and</span><span class="text-primary font24"> Daily Lovescope </span> <span
                     class="text-white font18">Directly In Your Inbox</span>
             </div>
             <div class="col-md-6 col-xs-12 footer_section_align">
@@ -31,7 +31,7 @@
         </div>
     </div>
 </section>
-<section class="footer_bg">
+<!-- <section class="footer_bg">
     <div class="container footer_align">
         <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
@@ -239,5 +239,5 @@
             <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         </a>
     </div>
-</section>
-<!--=============== Footer Section End ===============-->
+</section> -->
+<!--=============== Footer Section End =============== -->
