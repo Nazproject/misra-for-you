@@ -17,3 +17,6 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/admin', 'AdminController@index');
 //Route::view('/blogger', 'blogger');
+Route::get('/admin/horoscope/{slug}', 'HoroscopeController@index');
+Route::get('/admin/horoscope/create/{slug}', 'HoroscopeController@create');
+Route::post('/admin/horoscope/store/{slug}', 'HoroscopeController@store');
