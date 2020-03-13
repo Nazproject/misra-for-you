@@ -17,7 +17,7 @@
       </div>
     </div>
 </section> --}}
-<?php //print_r($list);die;?>
+<?php //echo "<pre>";print_r($list);die;?>
   <section class="content">
     <div class="row">
       <div class="col-12">
@@ -54,8 +54,9 @@
                 <th>#</th>
                 <th>Title</th>
                 <th>Desception</th>
-                <th>Category</th>
                 <th>Type</th>
+                <th>Date</th>
+                <th>Action</th>
               </tr>
               </thead>
               <tbody>
@@ -68,8 +69,13 @@
                 <td>{{$val->title}}
                 </td>
                 <td>{{$val->description}}</td>
-                <td>{{$val->category}}</td>
                 <td>{{$val->types}}</td>
+                <td>{{\Carbon\Carbon::parse($val->created_at)->format('d-m-Y')}}</td>
+                <td>
+                  <a class="btn btn-sm btn-danger" href="{{asset('admin/horoscope/delete/'.$val->id.'/'.$slug.'')}}"><i class="fa fa-trash"></i></a>
+                  <a class="btn btn-sm btn-info" href="{{asset('admin/horoscope/edit/'.$val->id.'/'.$slug.'')}}"><i class="fa fa-edit"></i></a>            
+                  
+                </td>
               </tr>
               
               <?php $i++;}?>

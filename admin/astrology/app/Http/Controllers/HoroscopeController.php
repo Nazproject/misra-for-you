@@ -9,7 +9,6 @@ use Log;
 
 class HoroscopeController extends Controller
 {
-
     public function __construct()
     {
         $this->middleware('auth:admin');
@@ -28,7 +27,6 @@ class HoroscopeController extends Controller
         ->get();
         return view('admin.horoscope.horoscope_list',['list' => $list,'title'=>$title,'slug'=>$slug]);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -37,10 +35,8 @@ class HoroscopeController extends Controller
     public function create($slug)
     {
         $title='Add '.$slug;
-        
         return view('admin.horoscope.horoscope_add',['title'=>$title,'slug'=>$slug]);
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -117,9 +113,10 @@ class HoroscopeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id, $slug)
     {
-        //
+        $title='Add '.$slug;
+        return view('admin.horoscope.horoscope_edit',['title'=>$title,'slug'=>$slug]);
     }
 
     /**
@@ -129,7 +126,7 @@ class HoroscopeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id, $slug)
     {
         //
     }
