@@ -65,56 +65,89 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Love Tarot
+                Horoscope
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
+                {{-- <span class="badge badge-info right">6</span> --}}
               </p>
             </a>
+
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{asset('admin/horoscope/Aries')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                  <p>Aries</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{asset('admin/horoscope/Taurus')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
+                  <p>Taurus</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{asset('admin/horoscope/Gemini')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
+                  <p>Gemini</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{asset('admin/horoscope/Cancer')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
+                  <p>Cancer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{asset('admin/horoscope/Leo')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
+                  <p>Leo</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{asset('admin/horoscope/Virgo')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
+                  <p>Virgo</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{asset('admin/horoscope/Libra')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
+                  <p>Libra</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{asset('admin/horoscope/Scorpio')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Scorpio</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{asset('admin/horoscope/Sagittarius')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sagittarius</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{asset('admin/horoscope/Capricorn')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Capricorn</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{asset('admin/horoscope/Aquarius')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Aquarius</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{asset('admin/horoscope/Pisces')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pisces</p>
                 </a>
               </li>
             </ul>
           </li>
+
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
@@ -552,6 +585,5 @@
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
- 
 
-  
+
