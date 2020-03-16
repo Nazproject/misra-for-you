@@ -5,14 +5,30 @@
 <div class="card">
   <div class="card-header">
     <h3 class="card-title">{{$title}}</h3>
-  </div>
+    <div>
+      <span style="float: right;padding: 1px;">
+        <a type="button" href="{{asset('admin/horoscope/Aries')}}" class="btn btn-info btn-xs">Aries</a>
+        <a type="button" href="{{asset('admin/horoscope/Taurus')}}" class="btn btn-info btn-xs">Taurus</a>
+        <a type="button" href="{{asset('admin/horoscope/Gemini')}}" class="btn btn-info btn-xs">Gemini</a>
+        <a type="button" href="{{asset('admin/horoscope/Cancer')}}" class="btn btn-info btn-xs">Cancer</a>
+        <a type="button" href="{{asset('admin/horoscope/Leo')}}" class="btn btn-info btn-xs">Leo</a>
+        <a type="button" href="{{asset('admin/horoscope/Virgo')}}" class="btn btn-info btn-xs">Virgo</a>
+        <a type="button" href="{{asset('admin/horoscope/Libra')}}" class="btn btn-info btn-xs">Libra</a>
+        <a type="button" href="{{asset('admin/horoscope/Scorpio')}}" class="btn btn-info btn-xs">Scorpio</a>
+        <a type="button" href="{{asset('admin/horoscope/Sagittarius')}}" class="btn btn-info btn-xs">Sagittarius</a>
+        <a type="button" href="{{asset('admin/horoscope/Capricorn')}}" class="btn btn-info btn-xs">Capricorn</a>
+        <a type="button" href="{{asset('admin/horoscope/Aquarius')}}" class="btn btn-info btn-xs">Aquarius</a>
+        <a type="button" href="{{asset('admin/horoscope/Pisces')}}" class="btn btn-info btn-xs">Pisces</a>
+      </span>
+    </div>
+  </div>  
   <div>
     @if ($message = Session::get('success'))
     <div class="alert alert-success alert-block">
       <button type="button" class="close" data-dismiss="alert">×</button>
         <strong>{{ $message }}</strong>
     </div>
-    <img src="images/{{ Session::get('image') }}">
+    <!-- <img src="images/{{ Session::get('image') }}"> -->
     @endif
     @if (count($errors) > 0)
     <div class="alert alert-danger">

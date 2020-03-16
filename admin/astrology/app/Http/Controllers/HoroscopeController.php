@@ -47,13 +47,12 @@ class HoroscopeController extends Controller
     {   //dd(request()->all());
         $data=request()->all();
 
-            $this->validate($request, [
-            'title'=>'required',
-            'description'=>'required',
-            'filename' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        $this->validate($request, [
+        'title'=>'required',
+        'description'=>'required',
+        'filename' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         //$horoscope = new Horoscope();
-     
          if($file = $request->hasFile('filename')) {
             
             $file = $request->file('filename') ;
@@ -115,8 +114,14 @@ class HoroscopeController extends Controller
      */
     public function edit($id, $slug)
     {
-        $title='Add '.$slug;
-        return view('admin.horoscope.horoscope_edit',['title'=>$title,'slug'=>$slug]);
+        //echo $id;die;
+        $title='Update '.$slug;
+        $horoscope = DB::table('horoscopes')
+        ->select('*')
+        ->where('id', $id)
+        ->first();
+        //print_r($horoscope);die;
+        return view('admin.horoscope.horoscope_edit',['title'=>$title,'slug'=>$slug,'horoscope'=>$horoscope]);
     }
 
     /**
@@ -126,9 +131,31 @@ class HoroscopeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id, $slug)
+    public function update(Request $request, $slug)
     {
-        //
+        //echo $request->title;die;
+        $this->validate($request, [
+        'title'=>'required',
+        'description'=>'required',
+        ]);
+        if($file = $request->hasFile('filename')) {
+            $file = $request->file('filename') ;
+            
+            $fileName = time()."_".$file->getClientOriginalName() ;
+            $destinationPath = public_path().'/dist/img/horoscope/' ;
+        }else{
+            $fileName=$request->old_image;
+        } 
+        DB::table('horoscopes')->where('id',$request->id)->update([
+        'title'=>$request->title,
+        'description'=>$request->description,
+        'filename'=>$fileName,
+        'category' => $request->category,
+        'types'=>$request->types,
+        'updated_at' => date('Y-m-d H:i')
+         ]);
+        return back()->with('success', 'Horoscope updated successfully');
+
     }
 
     /**
@@ -139,6 +166,7 @@ class HoroscopeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete = DB::table('horoscopes')->where('id', $id)->delete();
+        return back()->with('success', 'Horoscope removed successfully');
     }
 }

@@ -72,8 +72,8 @@
                 <td>{{$val->types}}</td>
                 <td>{{\Carbon\Carbon::parse($val->created_at)->format('d-m-Y')}}</td>
                 <td>
-                  <a class="btn btn-sm btn-danger" href="{{asset('admin/horoscope/delete/'.$val->id.'/'.$slug.'')}}"><i class="fa fa-trash"></i></a>
-                  <a class="btn btn-sm btn-info" href="{{asset('admin/horoscope/edit/'.$val->id.'/'.$slug.'')}}"><i class="fa fa-edit"></i></a>            
+                  <a class="btn btn-sm btn-danger" href="{{asset('/admin/horoscope/delete/'.$val->id.'')}}"><i class="fa fa-trash"></i></a>
+                  <a class="btn btn-sm btn-info" href="{{asset('/admin/horoscope/edit/'.$val->id.'/'.$slug.'')}}"><i class="fa fa-edit"></i></a>            
                   
                 </td>
               </tr>

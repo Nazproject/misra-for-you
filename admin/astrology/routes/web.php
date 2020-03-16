@@ -21,7 +21,7 @@ Route::group(['prefix' => 'admin'], function() {
 		Route::post('/store/{slug}', 'HoroscopeController@store');
 		Route::get('/edit/{id}/{slug}', 'HoroscopeController@edit');
 		Route::post('/update/{slug}', 'HoroscopeController@update');
-		Route::post('/delete/{slug}', 'HoroscopeController@store');
+		Route::get('/delete/{id}', 'HoroscopeController@destroy');
 	});
 
 
