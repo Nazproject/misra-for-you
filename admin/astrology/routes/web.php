@@ -11,17 +11,17 @@ Route::post('/login/admin', 'Auth\LoginController@adminLogin');
 //Route::post('/register/blogger', 'Auth\RegisterController@createBlogger');
 //Route::view('/home', 'home')->middleware('auth');
 Route::get('/home', 'HomeController@index');
-
+Route::get('/horoscope/{slug}', 'HoroscopeController@index');
 Route::group(['prefix' => 'admin'], function() {
 	Route::get('/', 'AdminController@index');
 
 	Route::group(['prefix' => 'horoscope'], function() {
-		Route::get('/{slug}', 'HoroscopeController@index');
-		Route::get('/create/{slug}', 'HoroscopeController@create');
-		Route::post('/store/{slug}', 'HoroscopeController@store');
-		Route::get('/edit/{id}/{slug}', 'HoroscopeController@edit');
-		Route::post('/update/{slug}', 'HoroscopeController@update');
-		Route::get('/delete/{id}', 'HoroscopeController@destroy');
+		Route::get('/{slug}', 'admin\HoroscopeController@index');
+		Route::get('/create/{slug}', 'admin\HoroscopeController@create');
+		Route::post('/store/{slug}', 'admin\HoroscopeController@store');
+		Route::get('/edit/{id}/{slug}', 'admin\HoroscopeController@edit');
+		Route::post('/update/{slug}', 'admin\HoroscopeController@update');
+		Route::get('/delete/{id}', 'admin\HoroscopeController@destroy');
 	});
 
 

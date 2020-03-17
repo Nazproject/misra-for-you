@@ -252,7 +252,7 @@
                             <div class="sign_circle bg-aries">
                                 <img src="{{ asset('frontend/images/aries-sign.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/aries')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-aries signs_clr font16">Aries</span><br>
                                     <span class="signtext_clr font12">Mar 21 - Apr 19</span>
@@ -263,7 +263,7 @@
                             <div class="sign_circle bg-taurus">
                                 <img src="{{ asset('frontend/images/taurus.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/taurus')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-taurus signs_clr font16">Taurus</span><br>
                                     <span class="signtext_clr font12">Apr 20 - May 20</span>
@@ -275,7 +275,7 @@
                             <div class="sign_circle bg-gemini">
                                 <img src="{{ asset('frontend/images/gemini.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/gemini')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-gemini signs_clr font16">Gemini</span><br>
                                     <span class="signtext_clr font12">May 21 - Jun 20</span>
@@ -287,7 +287,7 @@
                             <div class="sign_circle bg-cancer">
                                 <img src="{{ asset('frontend/images/cancer.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/cancer')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-cancer signs_clr font16">Cancer</span><br>
                                     <span class="signtext_clr font12">Jun 21 - Jul 22</span>
@@ -299,7 +299,7 @@
                             <div class="sign_circle bg-leo">
                                 <img src="{{ asset('frontend/images/leo.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/leo')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-leo signs_clr font16">Leo</span><br>
                                     <span class="signtext_clr font12">Jul 23 - Aug 22</span>
@@ -310,7 +310,7 @@
                             <div class="sign_circle bg-virgo">
                                 <img src="{{ asset('frontend/images/virgo.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/virgo')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-virgo signs_clr font16">Virgo</span><br>
                                     <span class="signtext_clr font12">Aug 23 - Sep 22</span>
@@ -322,7 +322,7 @@
                             <div class="sign_circle bg-libra">
                                 <img src="{{ asset('frontend/images/libra.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/libra')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-libra signs_clr font16">Libra</span><br>
                                     <span class="signtext_clr font12">Sep 23 - Oct 22</span>
@@ -333,7 +333,7 @@
                             <div class="sign_circle bg-scorpio">
                                 <img src="{{ asset('frontend/images/scorpio.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/scorpio')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-scorpio signs_clr font16">Scorpio</span><br>
                                     <span class="signtext_clr font12">Oct 23 - Nov 21</span>
@@ -345,7 +345,7 @@
                             <div class="sign_circle bg-sagittarius">
                                 <img src="{{ asset('frontend/images/sagittarius.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/sagittarius')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-sagittarius signs_clr font16">Sagittarius</span><br>
                                     <span class="signtext_clr font12">Nov 22 - Dec 21</span>
@@ -357,7 +357,7 @@
                             <div class="sign_circle bg-capricorn">
                                 <img src="{{ asset('frontend/images/capricorn.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/capricorn')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-capricorn signs_clr font16">Capricorn</span><br>
                                     <span class="signtext_clr font12">Dec 22 - Jan 19</span>
@@ -369,7 +369,7 @@
                             <div class="sign_circle bg-aquarius">
                                 <img src="{{ asset('frontend/images/aquarius.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/aquarius')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-aquarius signs_clr font16">Aquarius</span><br>
                                     <span class="signtext_clr font12">Jan 20 - Feb 18</span>
@@ -381,7 +381,7 @@
                             <div class="sign_circle bg-pisces">
                                 <img src="{{ asset('frontend/images/pisces.png') }}" alt="image-missing" class="rotate">
                             </div>
-                            <a href="#" class="main">
+                            <a href="{{asset('/horoscope/pisces')}}" class="main">
                                 <div class="sign_card text-center signs_bg">
                                     <span class="text-pisces signs_clr font16">Pisces</span><br>
                                     <span class="signtext_clr font12">Feb 19 - Mar 20</span>
