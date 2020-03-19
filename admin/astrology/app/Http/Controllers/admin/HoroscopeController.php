@@ -155,7 +155,16 @@ class HoroscopeController extends Controller
         //echo $request->title;die;
         $this->validate($request, [
         'title'=>'required',
+        'publish_date'=>'required',        
         'description'=>'required',
+        'finance'=>'required',
+        'education'=>'required',
+        'ascendant'=>'required',
+        'stock_market'=>'required',
+        'career'=>'required',
+        'love'=>'required',
+        'personalized'=>'required',
+        'health'=>'required',
         ]);
         if($file = $request->hasFile('filename')) {
             $file = $request->file('filename') ;
@@ -166,11 +175,21 @@ class HoroscopeController extends Controller
             $fileName=$request->old_image;
         } 
         DB::table('horoscopes')->where('id',$request->id)->update([
-        'title'=>$request->title,
-        'description'=>$request->description,
-        'filename'=>$fileName,
-        'category' => $request->category,
-        'types'=>$request->types,
+        'title' =>$request->title,
+        'filename' => $fileName,
+        'types' =>$request->types,
+        'category' =>$request->category,
+        'created_at' => date('Y-m-d H:i'), 
+        'description' =>$request->description,
+        'finance' =>$request->finance,
+        'education' =>$request->education,
+        'ascendant' =>$request->ascendant,
+        'stock_market' =>$request->stock_market,
+        'career' =>$request->career,
+        'love' =>$request->love,
+        'personalized' =>$request->personalized,
+        'health' =>$request->health,
+        'publish_date' =>$request->publish_date,
         'updated_at' => date('Y-m-d H:i')
          ]);
         return back()->with('success', 'Horoscope updated successfully');

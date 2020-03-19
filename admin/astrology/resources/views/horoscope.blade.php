@@ -6,15 +6,11 @@
         <div class="india_vasthu">
             <div class="row">
                 <div class="col-md-8">
-                    <h4><b>What is vasthu?</b></h4>
-                    <p>Vasthu shastra is a traditional science of architecture, mostly believed by hindu community.
-                        Vasthu Shasthra is a sanskrith word, vas means live, stay, reside, vasthu means foundation of house or land or building or any place, shasthra is nothing but knowledge script. Vasthu shasthra means script of  architectural science.
-                    <br/>
-                        Vasthu shasthra tells how a  construction should be  planned to channelise positive energy in and around the construction. A good implementation of vasthu will bring peace and prosperity to the people in the construction.
-                    <br/>Initially vasthu shastra was used to construct temples, later people started using vasthu shastra for every construction like homes, offices, hotels, etc. Many modern constructions are also build according  to the vasthu shasthra. Vasthu shastra is also providing guidelines to the modern architects in building construction according to the vasthu and modern designs. </p>
+                    <h4>{!! $list->title !!}</h4>
+                    <p>{!! $list->description !!}</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{asset('frontend/images/Vastu-01.jpg')}}" alt="mahavasthu_astrology" class="img-responsive">
+                    <img src="{{asset('dist/img/horoscope/'.$list->filename.'')}}" alt="mahavasthu_astrology" width="250" height="180" style="margin-top: 50px;" class="img-responsive">
                 </div>
             </div>
             <div class="row">

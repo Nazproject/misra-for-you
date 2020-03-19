@@ -26,12 +26,13 @@ class HoroscopeController extends Controller
     {
     	$title=$slug;
     	//$title='Horoscope List';
-    	$todayDate = date("Y-m-d");
+    	$year = date("Y");
         $list = DB::table('horoscopes')
         ->select('*')
         ->where('category', $slug)
-        ->where('created_at', $todayDate)
-        ->get();
+        ->where('types', 'yearly')
+        ->whereYear('publish_date', $year)
+        ->first();
         //dd($list);
         return view('horoscope',['list' => $list,'title'=>$title,'slug'=>$slug]);
     }
