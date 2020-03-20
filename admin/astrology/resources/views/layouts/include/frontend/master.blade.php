@@ -28,7 +28,7 @@
 
     <!--=============== Custom Css End ===============-->
 </head>
-<body>
+<body  style="background-image: url({{ asset('frontend/images/body_image.jpg') }});">
 <!--=============== Preloader Section Start ===============-->
 <div class="preloader" style="position: fixed;
   width: 100%;

@@ -28,18 +28,18 @@
           <h3 class="card-title">{{$title}}</h3>
           <div>
             <span style="float: right;padding: 1px;">
-              <a type="button" href="{{asset('admin/horoscope/Aries')}}" class="btn btn-info btn-xs">Aries</a>
-              <a type="button" href="{{asset('admin/horoscope/Taurus')}}" class="btn btn-info btn-xs">Taurus</a>
-              <a type="button" href="{{asset('admin/horoscope/Gemini')}}" class="btn btn-info btn-xs">Gemini</a>
-              <a type="button" href="{{asset('admin/horoscope/Cancer')}}" class="btn btn-info btn-xs">Cancer</a>
-              <a type="button" href="{{asset('admin/horoscope/Leo')}}" class="btn btn-info btn-xs">Leo</a>
-              <a type="button" href="{{asset('admin/horoscope/Virgo')}}" class="btn btn-info btn-xs">Virgo</a>
-              <a type="button" href="{{asset('admin/horoscope/Libra')}}" class="btn btn-info btn-xs">Libra</a>
-              <a type="button" href="{{asset('admin/horoscope/Scorpio')}}" class="btn btn-info btn-xs">Scorpio</a>
-              <a type="button" href="{{asset('admin/horoscope/Sagittarius')}}" class="btn btn-info btn-xs">Sagittarius</a>
-              <a type="button" href="{{asset('admin/horoscope/Capricorn')}}" class="btn btn-info btn-xs">Capricorn</a>
-              <a type="button" href="{{asset('admin/horoscope/Aquarius')}}" class="btn btn-info btn-xs">Aquarius</a>
-              <a type="button" href="{{asset('admin/horoscope/Pisces')}}" class="btn btn-info btn-xs">Pisces</a>
+              <a type="button" href="{{asset('admin/horoscope/aries')}}" class="btn btn-info btn-xs">Aries</a>
+              <a type="button" href="{{asset('admin/horoscope/taurus')}}" class="btn btn-info btn-xs">Taurus</a>
+              <a type="button" href="{{asset('admin/horoscope/gemini')}}" class="btn btn-info btn-xs">Gemini</a>
+              <a type="button" href="{{asset('admin/horoscope/cancer')}}" class="btn btn-info btn-xs">Cancer</a>
+              <a type="button" href="{{asset('admin/horoscope/leo')}}" class="btn btn-info btn-xs">Leo</a>
+              <a type="button" href="{{asset('admin/horoscope/virgo')}}" class="btn btn-info btn-xs">Virgo</a>
+              <a type="button" href="{{asset('admin/horoscope/libra')}}" class="btn btn-info btn-xs">Libra</a>
+              <a type="button" href="{{asset('admin/horoscope/scorpio')}}" class="btn btn-info btn-xs">Scorpio</a>
+              <a type="button" href="{{asset('admin/horoscope/sagittarius')}}" class="btn btn-info btn-xs">Sagittarius</a>
+              <a type="button" href="{{asset('admin/horoscope/capricorn')}}" class="btn btn-info btn-xs">Capricorn</a>
+              <a type="button" href="{{asset('admin/horoscope/aquarius')}}" class="btn btn-info btn-xs">Aquarius</a>
+              <a type="button" href="{{asset('admin/horoscope/pisces')}}" class="btn btn-info btn-xs">Pisces</a>
             </span>
           </div>
           </div>
@@ -72,8 +72,8 @@
                 <td>{{$val->types}}</td>
                 <td>{{\Carbon\Carbon::parse($val->created_at)->format('d-m-Y')}}</td>
                 <td>
-                  <a class="btn btn-sm btn-danger" href="{{asset('admin/horoscope/delete/'.$val->id.'/'.$slug.'')}}"><i class="fa fa-trash"></i></a>
-                  <a class="btn btn-sm btn-info" href="{{asset('admin/horoscope/edit/'.$val->id.'/'.$slug.'')}}"><i class="fa fa-edit"></i></a>            
+                  <a class="btn btn-sm btn-danger" href="{{asset('/admin/horoscope/delete/'.$val->id.'')}}"><i class="fa fa-trash"></i></a>
+                  <a class="btn btn-sm btn-info" href="{{asset('/admin/horoscope/edit/'.$val->id.'/'.$slug.'')}}"><i class="fa fa-edit"></i></a>            
                   
                 </td>
               </tr>

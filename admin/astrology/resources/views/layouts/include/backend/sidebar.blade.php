@@ -73,73 +73,73 @@
 
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Aries')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/aries')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Aries</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Taurus')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/taurus')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Taurus</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Gemini')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/gemini')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Gemini</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Cancer')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/cancer')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cancer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Leo')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/leo')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Leo</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Virgo')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/virgo')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Virgo</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Libra')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/libra')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Libra</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Scorpio')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/scorpio')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Scorpio</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Sagittarius')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/sagittarius')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sagittarius</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Capricorn')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/capricorn')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Capricorn</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Aquarius')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/aquarius')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Aquarius</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{asset('admin/horoscope/Pisces')}}" class="nav-link">
+                <a href="{{asset('admin/horoscope/pisces')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pisces</p>
                 </a>
