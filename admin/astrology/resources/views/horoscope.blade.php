@@ -1,6 +1,6 @@
 @extends('layouts.include.frontend.master')
 @section('title')
-    {{$title}}
+    {{@$title}}
 @endsection
 @section('content')
 

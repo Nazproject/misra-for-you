@@ -36,4 +36,19 @@ class HoroscopeController extends Controller
         //dd($list);
         return view('horoscope',['list' => $list,'title'=>$title,'slug'=>$slug]);
     }
+    public function horoscopebytype($type)
+    {
+    	$title=$type;
+    	//$title='Horoscope List';
+    	/*$year = date("Y");
+        $list = DB::table('horoscopes')
+        ->select('*')
+        ->where('category', $slug)
+        ->where('types', 'yearly')
+        ->whereYear('publish_date', $year)
+        ->first();*/
+        //dd($list);'list' => $list,
+        //echo 1;die;
+        return view('horoscopebytype',['title'=>$title,'type'=>$type]);
+    }
 }

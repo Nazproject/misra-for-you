@@ -12,6 +12,7 @@ Route::post('/login/admin', 'Auth\LoginController@adminLogin');
 //Route::view('/home', 'home')->middleware('auth');
 Route::get('/home', 'HomeController@index');
 Route::get('/horoscope/{slug}', 'HoroscopeController@index');
+Route::get('/horoscopes/{type}', 'HoroscopeController@horoscopebytype');
 Route::group(['prefix' => 'admin'], function() {
 	Route::get('/', 'AdminController@index');
 
