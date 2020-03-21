@@ -243,7 +243,7 @@
             <div class="col-md-12 text-center">
                 <div class="bg-white button_margin pic_margin">
                     <h1 class="text-primary font35 home_padding">Free
-                        Daily Horoscopes</h1>
+                        Yearly Horoscopes</h1>
                     <div class="home_head center-block"></div>
                     <p class="elements_desc">What kind of day will it be for you today? Use your free horoscope to plan your day, every day -
                         instantly!</p>
