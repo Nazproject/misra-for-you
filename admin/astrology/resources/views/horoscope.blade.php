@@ -1,4 +1,7 @@
 @extends('layouts.include.frontend.master')
+@section('title')
+    {{@$title}}
+@endsection
 @section('content')
 
 <section class="home_bg" style="background-image: url({{asset('frontend/images/astro_slider2.jpg')}});">

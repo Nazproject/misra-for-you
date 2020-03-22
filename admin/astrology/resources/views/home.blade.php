@@ -1,5 +1,7 @@
 @extends('layouts.include.frontend.master')
-
+@section('title')
+    {{ $title ?? 'Astrology' }}
+@endsection
 @section('content')
 <!--=============== Body Section Start ===============-->
 <!--=============== Revolution slider Start ===============-->

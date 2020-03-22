@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');//home
+        $title="Free Horoscope & Astrology";
+        return view('home', ['title'=>$title]);//home
     }
 }

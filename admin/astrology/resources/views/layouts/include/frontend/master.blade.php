@@ -2,7 +2,8 @@
 <html lang="en">
 
 <!-- Mirrored from demo.lorvent.com/astrology/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Feb 2020 04:33:53 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack  /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Homepage | Astrology</title>
+    <link rel="icon" type="image/png"  href="{{ asset('frontend/images/logo6.png') }}" style="height: 20px; width: 20px;">
+    <title>@yield('title')</title>
     <!--=============== Global Css Start ===============-->
     <link href="{{ asset('frontend/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -70,6 +72,7 @@
 <!--=============== Custom Js Start ===============-->
 <script src="{{ asset('frontend/js/custom.js') }}"></script>
 <!--=============== Custom Js End ===============-->
+
 </body>
 
 <!-- Mirrored from demo.lorvent.com/astrology/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Feb 2020 04:34:12 GMT -->
