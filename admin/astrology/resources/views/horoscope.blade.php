@@ -9,11 +9,11 @@
         <div class="india_vasthu">
             <div class="row">
                 <div class="col-md-8">
-                    <h4>{!! $list->title !!}</h4>
-                    <p>{!! $list->description !!}</p>
+                    <h4>{!! @$list->title !!}</h4>
+                    <p>{!! @$list->description !!}</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{asset('dist/img/horoscope/'.$list->filename.'')}}" alt="mahavasthu_astrology" width="250" height="180" style="margin-top: 50px;" class="img-responsive">
+                    <img src="{{asset('dist/img/horoscope/'.@$list->filename.'')}}" alt="mahavasthu_astrology" width="250" height="180" style="margin-top: 50px;" class="img-responsive">
                 </div>
             </div>
             <div class="row">
@@ -58,28 +58,28 @@
                 <div class="expert">
                     <img src="{{asset('frontend/images/Finance.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">Aries Finance Horoscope 2020</h4>
-                   <button align="center" style="border:1px solid black; background-color: yellow; color:black;">Read More</button>
+                   <a align="center" href="{{asset('/zodiac/finance/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/Education.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">Aries Education Horoscope 2020</h4>
-                    <button align="center" style="border:1px solid black; background-color: yellow; color:black;">Read More</button>
+                    <a align="center" href="{{asset('/zodiac/education/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/Ascendant.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">Ascendant Horoscope 2020 </h4>
-                     <button align="center" style="border:1px solid black; background-color: yellow; color:black;">Read More</button>
+                     <a align="center" href="{{asset('/zodiac/ascendant/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/wealth.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">Stock Market Predictions 2020</h4>
-                    <button align="center" style="border:1px solid black; background-color: yellow; color:black;">Read More</button>
+                    <a align="center" href="{{asset('/zodiac/wealth/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
                 <div class="expert">
                     <img src="{{asset('frontend/images/job.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">Aries Career Horoscope 2020</h4>
-                    <button align="center" style="border:1px solid black; background-color: yellow; color:black;">Read More</button>
+                    <a align="center" href="{{asset('/zodiac/career/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
 
             </div>
@@ -98,21 +98,21 @@
                 <div class="expert">
                     <img src="{{asset('frontend/images/love.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">Aries Love Horoscope 2020</h4>
-                   <button align="center" style="border:1px solid black; background-color: yellow; color:black;">Read More</button>
+                   <a align="center" href="{{asset('/zodiac/love/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/personalized-horoscope.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">Personalized Horoscope 2020</h4>
-                    <button align="center" style="border:1px solid black; background-color: yellow; color:black;">Read More</button>
+                    <a align="center" href="{{asset('/zodiac/personalized/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/Health.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">AAries Health Horoscope 2020</h4>
-                    <button align="center" style="border:1px solid black; background-color: yellow; color:black;">Read More</button>
+                    <a align="center" href="{{asset('/zodiac/health/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
         </div>

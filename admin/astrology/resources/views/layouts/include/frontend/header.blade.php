@@ -54,15 +54,22 @@
                         <div class="text-center info1 font13 ">Horoscope</div>
                     </a>
                 </div> -->
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                <!-- <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/lalkitab5.png') }}" alt="Image missing">
                         </div>
                         <div class="text-center info1 font13 ">Lal Kitab</div>
                     </a>
+                </div> -->
+                <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="#">
+                        <div class="bg-info header_bg center-block">
+                            <img src="{{ asset('frontend/images/calendar.png') }}" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 ">Calender 2020</div>
+                    </a>
                 </div>
-
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">

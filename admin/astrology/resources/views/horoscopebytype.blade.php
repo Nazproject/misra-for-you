@@ -14,7 +14,7 @@
                     <li>
                         <img src="{{asset('frontend/images/right-arrow1.png')}}" alt="arrow" class="blog_right_arrow">
                     </li>
-                    <li><a href="signs.html" class="font13 text-info">{{$type}}</a>
+                    <li><a href="signs.html" class="font13 text-info">{{ucfirst($type)}}</a>
                     </li>
                     <!--<li>
                         <img src="{{asset('frontend/images/right-arrow1.png')}}" alt="arrow" class="blog_right_arrow">
@@ -34,17 +34,17 @@
            <!-- <span class="text-primary font35"><img
                     src="images/leo-sign.png"
                     alt="logo missing"> Leo Horoscope </span>-->
-                    <h3 style="color: white;"> Daily Astrology For All Zodiac Signs</h3>
+                    <h3 style="color: white;"> {{ucfirst($type)}} Astrology For All Zodiac Signs</h3>
                     <h4 style="color: white;">हिंदी में पढ़े - आज का राशिफल</h4>
                    <div class="row games_thumnail">
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/aries')}}">
                         <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Aries1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
                     </a>
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/taurus')}}">
 
 
                         <div class="col-sm-3 col-xs-3 m-t-40">
@@ -52,7 +52,7 @@
                         </div>
                     </a>
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/gemini}')}}">
 
                               <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Gemini1.jpg')}}" class="img-responsive center-block" alt="loading">
@@ -60,7 +60,7 @@
                     </a>
 
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/cancer')}}">
                          <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Cancer1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
@@ -71,25 +71,25 @@
 
                     </div>
                       <div class="row games_thumnail">
-                        <a href="horoscope.html">
+                        <a href="{{asset('/horoscope/'.$type.'/leo')}}">
                         <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Leo1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
                     </a>
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/virgo')}}">
                         <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Virgo1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
                     </a>
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/libra')}}">
                          <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Libra1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
                     </a>
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/scorpio')}}">
                          <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Scorpio1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
@@ -99,24 +99,24 @@
 
                     </div>
                     <div class="row games_thumnail">
-                        <a href="horoscope.html">
+                        <a href="{{asset('/horoscope/'.$type.'/sagittarius')}}">
                         <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Sagittarius1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
                     </a>
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/capricorn')}}">
                         <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Capricorn1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
                     </a>
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/aquarius')}}">
                             <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Aquarius1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
                     </a>
 
-                    <a href="horoscope.html">
+                    <a href="{{asset('/horoscope/'.$type.'/pisces')}}">
                          <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Pisces1.jpg')}}" class="img-responsive center-block" alt="loading">
                         </div>
