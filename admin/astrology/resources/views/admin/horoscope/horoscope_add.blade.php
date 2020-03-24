@@ -51,52 +51,52 @@
         <div class="col-md-8">
           <div class="form-group">
             <label>Title</label>
-            <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="1" name="title" placeholder="Enter Title"></textarea>
+            <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="1" name="title" placeholder="Enter Title">{{old('title') }}</textarea>
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
             <label>Publish Date</label>
-            <input type="date" class="form-control" name="publish_date">  
+            <input type="date" class="form-control" name="publish_date" value="{{old('publish_date') }}">  
           </div>
         </div>
       </div>
       
       <div class="form-group">
         <label>Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="description" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="description" placeholder="Enter Description">{{old('publish_date') }}</textarea>
       </div>
       <div class="form-group">
         <label>Finance Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="finance" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="finance" placeholder="Enter Description">{{old('finance') }}</textarea>
       </div>
       <div class="form-group">
         <label>Education Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="education" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="education" placeholder="Enter Description">{{old('education') }}</textarea>
       </div>
       <div class="form-group">
         <label>Ascendant Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="ascendant" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="ascendant" placeholder="Enter Description">{{old('ascendant') }}</textarea>
       </div>
       <div class="form-group">
         <label>Stock Market Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="stock_market" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="stock_market" placeholder="Enter Description">{{old('stock_market') }}</textarea>
       </div>
       <div class="form-group">
         <label>Career Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="career" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="career" placeholder="Enter Description">{{old('career') }}</textarea>
       </div>
       <div class="form-group">
         <label>Love Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="love" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="love" placeholder="Enter Description">{{old('love') }}</textarea>
       </div>
       <div class="form-group">
         <label>Personalized Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="personalized" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="personalized" placeholder="Enter Description">{{old('personalized') }}</textarea>
       </div>
       <div class="form-group">
         <label>Health Description</label>
-        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="health" placeholder="Enter Description"></textarea>
+        <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3" name="health" placeholder="Enter Description">{{old('health') }}</textarea>
       </div>
       <div class="form-group">
         <label for="exampleInputFile">Image</label>

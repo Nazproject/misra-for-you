@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use DB;
 use Log;
 
@@ -46,8 +47,7 @@ class HoroscopeController extends Controller
     public function store(Request $request)
     {   //dd(request()->all());
         $data=request()->all();
-
-        $this->validate($request, [
+        $vali = Validator::make($request->all(), [
         'title'=>'required',
         'publish_date'=>'required',        
         'description'=>'required',
@@ -61,6 +61,25 @@ class HoroscopeController extends Controller
         'health'=>'required',
         'filename' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+
+        if ($vali->fails())
+        {
+            return redirect()->back()->withErrors($vali->errors())->withInput();
+        }
+        /*$validation=$this->validate($request, [
+        'title'=>'required',
+        'publish_date'=>'required',        
+        'description'=>'required',
+        'finance'=>'required',
+        'education'=>'required',
+        'ascendant'=>'required',
+        'stock_market'=>'required',
+        'career'=>'required',
+        'love'=>'required',
+        'personalized'=>'required',
+        'health'=>'required',
+        'filename' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);*/
         //$horoscope = new Horoscope();
          if($file = $request->hasFile('filename')) {
             
@@ -153,7 +172,7 @@ class HoroscopeController extends Controller
     public function update(Request $request, $slug)
     {
         //echo $request->title;die;
-        $this->validate($request, [
+        $vali = Validator::make($request->all(), [
         'title'=>'required',
         'publish_date'=>'required',        
         'description'=>'required',
@@ -166,6 +185,24 @@ class HoroscopeController extends Controller
         'personalized'=>'required',
         'health'=>'required',
         ]);
+
+        if ($vali->fails())
+        {
+            return redirect()->back()->withErrors($vali->errors())->withInput();
+        }
+        /*$this->validate($request, [
+        'title'=>'required',
+        'publish_date'=>'required',        
+        'description'=>'required',
+        'finance'=>'required',
+        'education'=>'required',
+        'ascendant'=>'required',
+        'stock_market'=>'required',
+        'career'=>'required',
+        'love'=>'required',
+        'personalized'=>'required',
+        'health'=>'required',
+        ]);*/
         if($file = $request->hasFile('filename')) {
             $file = $request->file('filename') ;
             
