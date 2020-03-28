@@ -35,7 +35,7 @@
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/cancer.png') }}" alt="Image missing" style="margin-right: -2px;">
                         </div>
-                        <div class="text-center info1 font13">{{__(msg.Rashifal)}}</div>
+                        <div class="text-center info1 font13">{{__('msg.Rashifal')}}</div>
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
@@ -43,7 +43,7 @@
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/kundli3.png') }}" alt="Image missing" style="width: 20px; height: 20px;">
                         </div>
-                        <div class="text-center info1 font13 ">Kundli</div>
+                        <div class="text-center info1 font13 ">{{__('msg.Kundli')}}</div>
                     </a>
                 </div>
                 <!-- <div class="col-sm-2 col-xs-2 text-center head_signs">
@@ -67,7 +67,7 @@
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/calendar.png') }}" alt="Image missing">
                         </div>
-                        <div class="text-center info1 font13 ">Calender 2020</div>
+                        <div class="text-center info1 font13 ">{{__('msg.Calender')}} 2020</div>
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
@@ -75,7 +75,7 @@
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/panchang4.png') }}" alt="Image missing">
                         </div>
-                        <div class="text-center info1 font13 ">Panchang</div>
+                        <div class="text-center info1 font13 ">{{__('msg.Panchang')}}</div>
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
@@ -83,7 +83,7 @@
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/man-with-tie.png') }}" alt="Image missing">
                         </div>
-                        <div class="text-center info1 font13 ">Career</div>
+                        <div class="text-center info1 font13 ">{{__('msg.Career')}}</div>
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
@@ -91,7 +91,7 @@
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/heart.png') }}" alt="Image missing">
                         </div>
-                        <div class="text-center info1 font13 ">Love</div>
+                        <div class="text-center info1 font13 ">{{__('msg.Love')}}</div>
                     </a>
                 </div>
             </div>
@@ -130,18 +130,18 @@
                             <a href="#" class="text-info">2020</a>
                         </li>
                         <li class="header_li">
-                            <a href="#" class="text-info">Gemstones Report</a>
+                            <a href="#" class="text-info">{{__('msg.Gemstones')}} {{__('msg.Report')}}</a>
                         </li>
 
 
                         <li class="header_li">
-                            <a href="#" class="text-info"><i class="fa fa-heart"></i>Compatibility</a>
+                            <a href="#" class="text-info"><i class="fa fa-heart"></i>{{__('msg.Compatibility')}}</a>
                         </li>
                         <!-- <li class="header_li">
                             <a href="#" class="text-info">Lal Kitab</a>
                         </li> -->
                         <li class="header_li">
-                            <a href="#" class="text-info">Festivals</a>
+                            <a href="#" class="text-info">{{__('msg.Festivals')}}</a>
                         </li>
                         
                        
@@ -160,20 +160,20 @@
                             </ul>
                         </li> -->
                         <li class="dropdown dropdown_modified">
-                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Horoscope <span
+                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">{{__('msg.Horoscope')}} <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
                                 data-dropdown-out="fadeOut">
-                                <li><a href="{{asset('/horoscopes/daily')}}">Daily Horoscope</a></li>
-                                <li><a href="{{asset('/horoscopes/weekly')}}">Weekly Horoscope</a></li>
-                                <li><a href="{{asset('/horoscopes/monthly')}}">Monthly Horoscope</a></li>
-                                <li><a href="{{asset('/horoscopes/yearly')}}">Yearly Horoscope</a></li>
+                                <li><a href="{{asset('/horoscopes/daily')}}">{{__('msg.Daily')}} {{__('msg.Horoscope')}}</a></li>
+                                <li><a href="{{asset('/horoscopes/weekly')}}">{{__('msg.Weekly')}} {{__('msg.Horoscope')}}</a></li>
+                                <li><a href="{{asset('/horoscopes/monthly')}}">{{__('msg.Monthly')}} {{__('msg.Horoscope')}}</a></li>
+                                <li><a href="{{asset('/horoscopes/yearly')}}">{{__('msg.Yearly')}} {{__('msg.Horoscope')}}</a></li>
                                 
                                 
                             </ul>
                         </li>
                         <li class="header_li">
-                            <a href="#" class="text-info">Misc</a>
+                            <a href="#" class="text-info">{{__('msg.Misc')}}</a>
                         </li>
                     </ul>
                 </div>
