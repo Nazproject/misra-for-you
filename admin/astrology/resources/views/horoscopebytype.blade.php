@@ -52,7 +52,7 @@
                         </div>
                     </a>
 
-                    <a href="{{asset('/horoscope/'.$type.'/gemini}')}}">
+                    <a href="{{asset('/horoscope/'.$type.'/gemini')}}">
 
                               <div class="col-sm-3 col-xs-3 m-t-40">
                             <img src="{{asset('frontend/images/Gemini1.jpg')}}" class="img-responsive center-block" alt="loading">
