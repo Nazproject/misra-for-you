@@ -34,11 +34,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 m-t-26 hr_bottom_align">
-            <h1 class="text-primary" style="color: black;">MAIN HEADING</h1>
+            <h1 class="text-primary" style="color: black;">{{ucfirst($slug)}} <?php if($special=="stock_market"){echo "Stock Market Predictions";}else{echo ucfirst($special)." Horoscope";}?> {{date('Y')}}</h1>
             <hr>
             <div class="row">
                 <div class="col-sm-4 col-xs-5 m-t-40">
-                    <img src="{{asset('dist/img/horoscope/'.$list->filename.'')}}" alt="image loading" class="img-responsive">
+                    <img src="{{asset('dist/img/horoscope/'.@$list->filename.'')}}" alt="image loading" class="img-responsive">
                     <h1 class="text_primary m-t-40" style="color: black;">Mishra4You Shop</h1>
                     <hr>
                     <div class="row wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="col-sm-8 blog_single_para content_margin">
-                	{!! @$list->finance !!}
+                	{!! @$list->$special !!}
                     <!-- <span class="text-info font30 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                         HEADING-1
                     </span>
