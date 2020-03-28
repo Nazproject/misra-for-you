@@ -44,7 +44,7 @@ class HoroscopeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store($slug,Request $request)
     {   //dd(request()->all());
         $data=request()->all();
         $vali = Validator::make($request->all(), [
@@ -129,8 +129,8 @@ class HoroscopeController extends Controller
             $horoscope->types = $data['types'];
             $horoscope->save();
         }*/
-        return back()
-            ->with('success','You have successfully added.');
+        //return back()->with('success','You have successfully added.');
+        return redirect('admin/horoscope/'.$slug.'')->with('success','You have successfully added.');
     }
 
     /**
@@ -229,8 +229,8 @@ class HoroscopeController extends Controller
         'publish_date' =>$request->publish_date,
         'updated_at' => date('Y-m-d H:i')
          ]);
-        return back()->with('success', 'Horoscope updated successfully');
-
+        //return back()->with('success', 'Horoscope updated successfully');
+        return redirect('admin/horoscope/'.$slug.'')->with('success','Horoscope updated successfully.');
     }
 
     /**

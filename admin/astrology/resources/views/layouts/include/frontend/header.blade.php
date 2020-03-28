@@ -35,7 +35,7 @@
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/cancer.png') }}" alt="Image missing" style="margin-right: -2px;">
                         </div>
-                        <div class="text-center info1 font13">Rashifal</div>
+                        <div class="text-center info1 font13">{{__(msg.Rashifal)}}</div>
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
