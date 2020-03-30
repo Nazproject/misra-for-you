@@ -129,11 +129,11 @@
             <i class="fas fa-users mr-2"></i>Profile
           </a>
           <div class="dropdown-divider"></div>
-          <a href="{{ route('logout') }}" class="btn btn-default dropdown-item"
+          <a href="{{ route('logout')}}" class="btn btn-default dropdown-item"
              onclick="event.preventDefault();document.getElementById('logout-form').submit();">
              <i class="fas fa-lock mr-2"></i>Sign out
           </a>
-          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+          <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none;">
               {{ csrf_field() }}
           </form>
           <!-- <div class="dropdown-divider"></div>

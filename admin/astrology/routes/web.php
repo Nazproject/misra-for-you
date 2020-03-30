@@ -1,21 +1,29 @@
 <?php
-Route::view('/', 'home');
-Auth::routes();
-Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm');
-//Route::get('/login/blogger', 'Auth\LoginController@showBloggerLoginForm');
-///Route::get('/register/admin', 'Auth\RegisterController@showAdminRegisterForm');
-//Route::get('/register/blogger', 'Auth\RegisterController@showBloggerRegisterForm');
-Route::post('/login/admin', 'Auth\LoginController@adminLogin');
-//Route::post('/login/blogger', 'Auth\LoginController@bloggerLogin');
-///Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
-//Route::post('/register/blogger', 'Auth\RegisterController@createBlogger');
-//Route::view('/home', 'home')->middleware('auth');
-Route::get('/home', 'HomeController@index');
-Route::get('/horoscope/{slug}', 'HoroscopeController@index');
-Route::get('/horoscope/{type}/{slug}', 'HoroscopeController@horoscopebytypefetch');
-Route::get('/zodiac/{special}/{slug}', 'HoroscopeController@horospecial');
+//Route::redirect('/', 'en');
+//Route::group(['prefix' => '{language}'], function() {//new
+	Route::view('/', 'home');
+	Auth::routes();
+	Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm');
+	//Route::get('/login/blogger', 'Auth\LoginController@showBloggerLoginForm');
+	///Route::get('/register/admin', 'Auth\RegisterController@showAdminRegisterForm');
+	//Route::get('/register/blogger', 'Auth\RegisterController@showBloggerRegisterForm');
+	Route::post('/login/admin', 'Auth\LoginController@adminLogin');
+	//Route::post('/login/blogger', 'Auth\LoginController@bloggerLogin');
+	///Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
+	//Route::post('/register/blogger', 'Auth\RegisterController@createBlogger');
+	//Route::view('/home', 'home')->middleware('auth');
+	Route::get('/home', 'HomeController@index');
+	Route::get('/horoscope/{slug}', 'HoroscopeController@index');
+	Route::get('/horoscope/{type}/{slug}', 'HoroscopeController@horoscopebytypefetch');
+	Route::get('/zodiac/{special}/{slug}', 'HoroscopeController@horospecial');
 
-Route::get('/horoscopes/{type}/{slug?}', 'HoroscopeController@horoscopebytype');
+	Route::get('/horoscopes/{type}/{slug?}', 'HoroscopeController@horoscopebytype');
+	//Route::post('/message', 'MessageController@index');
+
+
+
+
+	
 Route::group(['prefix' => 'admin'], function() {
 	Route::get('/', 'AdminController@index');
 
@@ -27,6 +35,5 @@ Route::group(['prefix' => 'admin'], function() {
 		Route::post('/update/{slug}', 'admin\HoroscopeController@update');
 		Route::get('/delete/{id}', 'admin\HoroscopeController@destroy');
 	});
-
-
-});	
+});
+//});		

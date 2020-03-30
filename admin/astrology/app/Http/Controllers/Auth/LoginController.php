@@ -2,6 +2,7 @@
 
 
 namespace App\Http\Controllers\Auth;
+
 use App\Providers\RouteServiceProvider;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -59,4 +60,5 @@ class LoginController extends Controller
         }
         return back()->withInput($request->only('email', 'remember'));
     }
+
 }
