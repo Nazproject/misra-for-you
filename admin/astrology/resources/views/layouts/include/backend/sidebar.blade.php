@@ -302,11 +302,12 @@
           </li>
           <li class="nav-header">Shop</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
+            <a href="{{ route('admin.category') }}" class="nav-link">
+              <!-- <i class="nav-icon far fa-calendar-alt"></i> -->
+              <i class="nav-icon fas fa-th"></i>
               <p>
-                Gemstones
-                <span class="badge badge-info right">2</span>
+                Category
+                <!-- <span class="badge badge-info right">2</span> -->
               </p>
             </a>
           </li>

@@ -26,7 +26,13 @@ Route::get('/home', 'HomeController@index');
 
 	
 Route::group(['prefix' => 'admin'], function() {
-  	
+  Route::get('/category', 'admin\CategoryController@index')->name('admin.category');
+  Route::get('/category/create', 'admin\CategoryController@create')->name('admin.category.create');
+  Route::post('/category/store', 'admin\CategoryController@store')->name('admin.category.store');
+  Route::get('/category/edit/{id}', 'admin\CategoryController@edit')->name('admin.category.edit');
+  Route::post('/category/update/{id}', 'admin\CategoryController@update')->name('admin.category.update');
+  Route::get('category/delete/{id}', 'admin\CategoryController@destroy')->name('admin.category.delete');
+
   Route::get('/message/delete/{id}', 'admin\MessageController@destroy');
   Route::get('/message', 'admin\MessageController@index')->name('admin.message');
   Route::group(['prefix' => 'horoscope'], function() {	
@@ -42,3 +48,5 @@ Route::group(['prefix' => 'admin'], function() {
   Route::get('/', 'AdminController@index')->name('admin.dashboard');
 });
 //});		
+
+
