@@ -131,7 +131,23 @@
                 <h4>Are you busy with your programs? Are you away from our office? </h4>
                     <p>No worries, we can help you online, fill your details and we will send you your zodiac sign reading in your inbox!!!</p>
                 </div>
+                <div>
+                    @if ($message = Session::get('success'))
+                    <script>alert('<?php echo $message;?>');</script>
+                    @endif
+                    <!-- @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                      <strong>Whoops!</strong> There were some problems with your input.
+                      <ul>
+                      @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                      @endforeach
+                      </ul>
+                    </div>
+                    @endif -->
+                </div>
                 <form action="{{asset('/message')}}" method="POST">
+                    @csrf
                     <div class="col-md-6">
                         <div class="uploadform">
                             <form action="#">

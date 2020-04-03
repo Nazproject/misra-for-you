@@ -1,3 +1,7 @@
+
+
+
+
 <section class="backgroundclr">
     <div class="container">
         <div class="row">
@@ -21,6 +25,7 @@
                       <a href="#"><i class="fa fa-google-plus-square header_icons fa-lg" aria-hidden="true"></i></a>
                 </span>
             </div>
+            
         </div>
     </div>
 </section>
@@ -87,12 +92,37 @@
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="{{ asset('frontend/images/heart.png') }}" alt="Image missing">
+                <ul class="navbar-nav ml-auto" style="margin-top: -28px;">
+                  <li class="nav-item dropdown" style="list-style-type: none;" >
+                    <a href="#" class="nav-link" data-toggle="dropdown">
+                      <div class="user-panel d-flex">
+                        <div class="image">
+                          <img src="{{ asset('dist/img/user2-160x160.jpg') }}" style="height: 45px; width: 45px;" class="img-circle" alt="User Image">
+                          <span class="hidden-xs">{{ @Auth::user()->name }}</span>
                         </div>
-                        <div class="text-center info1 font13 ">{{__('msg.Love')}}</div>
+                      </div>
                     </a>
+                    <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"> -->
+                      <!-- <a href="#" class="btn btn-default dropdown-item">
+                        <i class="fas fa-users mr-2"></i>Profile
+                      </a> -->
+                      
+                      <ul class="dropdown-menu" style="width: 30px !important;" data-dropdown-in="fadeInUp"
+                                >
+                        <li><a href="{{ route('logout')}}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fa fa-lock mr-2"></i> Sign out</a></li>
+                        <li><a href="#"><i class="fa fa-users mr-2"></i> Profile</a></li>
+                    </ul>
+                      <!-- <div class="dropdown-divider"></div>
+                      <a href="{{ route('logout')}}" class="btn btn-default dropdown-item"
+                         onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                         <i class="fas fa-lock mr-2"></i>Sign out
+                      </a> -->
+                      <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
+                      </form>
+                    <!-- </div> -->
+                  </li>
+                </ul>
                 </div>
             </div>
         </div>
