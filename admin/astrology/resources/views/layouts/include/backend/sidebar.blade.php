@@ -312,10 +312,11 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
+            <a href="{{ route('admin.product') }}" class="nav-link">
+              <!-- <i class="nav-icon far fa-image"></i> -->
+              <i class="nav-icon fab fa-paypal"></i>
               <p>
-                Campatibility
+                Product
               </p>
             </a>
           </li>
