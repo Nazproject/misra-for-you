@@ -53,11 +53,11 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{asset('admin/message')}}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Appointment
-                <span class="right badge badge-danger">New</span>
+                Message
+                <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
@@ -300,21 +300,23 @@
               </li>
             </ul>
           </li>
-          <li class="nav-header">Products</li>
+          <li class="nav-header">Shop</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
+            <a href="{{ route('admin.category') }}" class="nav-link">
+              <!-- <i class="nav-icon far fa-calendar-alt"></i> -->
+              <i class="nav-icon fas fa-th"></i>
               <p>
-                Gemstones
-                <span class="badge badge-info right">2</span>
+                Category
+                <!-- <span class="badge badge-info right">2</span> -->
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
+            <a href="{{ route('admin.product') }}" class="nav-link">
+              <!-- <i class="nav-icon far fa-image"></i> -->
+              <i class="nav-icon fab fa-paypal"></i>
               <p>
-                Campatibility
+                Product
               </p>
             </a>
           </li>

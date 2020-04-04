@@ -2,6 +2,7 @@
 
 
 namespace App\Http\Controllers\Auth;
+
 use App\Providers\RouteServiceProvider;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -28,8 +29,8 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
-
+    //protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/home';
     /**
      * Create a new controller instance.
      *
@@ -38,15 +39,15 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
-        $this->middleware('guest:admin')->except('logout');
+        //$this->middleware('guest:admin')->except('logout');
     }
 
-    public function showAdminLoginForm()
+    /*public function showAdminLoginForm()
     {
         return view('auth.login', ['url' => 'admin']);
-    }
+    }*/
 
-    public function adminLogin(Request $request)
+    /*public function adminLogin(Request $request)
     {
         $this->validate($request, [
             'email'   => 'required|email',
@@ -58,5 +59,6 @@ class LoginController extends Controller
             return redirect()->intended('/admin');
         }
         return back()->withInput($request->only('email', 'remember'));
-    }
+    }*/
+
 }

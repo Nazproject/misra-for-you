@@ -17,7 +17,7 @@
                 @isset($url)
                 <form method="POST" action='{{ url("login/$url") }}' aria-label="{{ __('Login') }}">
                 @else
-                <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+                <form method="POST" action="{{ route('login', app()->getLocale()) }}" aria-label="{{ __('Login') }}">
                 @endisset
                     @csrf
                 <form>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     @if (Route::has('password.request'))
-                    <a href="{{ route('password.request') }}">{{ __('Forgot Your Password?') }}</a>
+                    <a href="{{ route('password.request', app()->getLocale()) }}">{{ __('Forgot Your Password?') }}</a>
                     @endif
                 </div>
             </div>

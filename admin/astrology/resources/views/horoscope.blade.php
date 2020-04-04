@@ -127,51 +127,104 @@
         <div class="vasthu_online">
             <div class="row">
                 <div class="col-md-6">
-                <h4><b>Online vasthu</b></h4>
+                <h4><b>Get Your Horoscope In your Inbox!</b></h4>
                 <h4>Are you busy with your programs? Are you away from our office? </h4>
-                    <p>No worries, we can help you online, fill your details and provide us your construction sketch and our team will respond you in a very quick time. </p>
+                    <p>No worries, we can help you online, fill your details and we will send you your zodiac sign reading in your inbox!!!</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="uploadform">
-                        <form action="#">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="First name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Last name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control"  placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control"  placeholder="Phone number">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="file" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary">
-                                </div>
-                            </div>
-                        </form>
+                <div>
+                    @if ($message = Session::get('success'))
+                    <script>alert('<?php echo $message;?>');</script>
+                    @endif
+                    <!-- @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                      <strong>Whoops!</strong> There were some problems with your input.
+                      <ul>
+                      @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                      @endforeach
+                      </ul>
                     </div>
+                    @endif -->
                 </div>
+                <form action="{{asset('/message')}}" method="POST">
+                    @csrf
+                    <div class="col-md-6">
+                        <div class="uploadform">
+                            <form action="#">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" value="{{old('title') }}" class="form-control" placeholder="First name">
+                                        <span class="text-danger">{{ $errors->first('first_name') }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" value="{{old('title') }}" class="form-control" placeholder="Last name">
+                                        <span class="text-danger">{{ $errors->first('last_name') }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" value="{{old('title') }}" class="form-control"  placeholder="Email">
+                                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="phone" value="{{old('title') }}" class="form-control"  placeholder="Phone number">
+                                        <span class="text-danger">{{ $errors->first('phone') }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-control" name="zodiac_sign">
+                                            <option value="" >Select Zodiac Sign</option>
+                                            <option value="aquarius" >Aquarius</option>
+                                            <option value="pisces" >Pisces</option>
+                                            <option value="aries" >Aries</option>
+                                            <option value="gemini" >Gemini</option>
+                                            <option value="cancer" >Cancer</option>
+                                            <option value="leo" >Leo</option>
+                                            <option value="virgo" >Virgo</option>
+                                            <option value="libra" >Libra</option>
+                                            <option value="scorpio" >Scorpio</option>
+                                            <option value="sagittarius" >Sagittarius</option>
+                                            <option value="Capricorn" >Capricorn</option>
+                                            <option value="Taurus" >Taurus</option>
+                                        </select>
+                                        <span class="text-danger">{{ $errors->first('zodiac_sign') }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-control" name="content_type">
+                                            <option value="daily" >Daily</option>
+                                            <option value="weekly" >Weekly</option>
+                                            <option value="monthly" >Monthly</option>
+                                            <option value="yearly" >Yearly</option>
+                                        </select>
+                                        <span class="text-danger">{{ $errors->first('content_type') }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="note" rows="2" placeholder="Send your query to the astrologer"></textarea>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control">
+                                    </div>
+                                </div> -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-primary" value="Send">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </form>    
             </div>
         </div>
     </div>

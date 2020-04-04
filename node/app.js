@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').config({path:'./.env'});
 const express = require("express");
 const app     = express();
 const admin   = require('./routes/admin');
@@ -7,7 +8,7 @@ const site    = require('./routes/site/index');
 
 // Settings
 app.set('view engine', 'ejs');
-app.use('/public', express.static('public'));
+app.use('/public',express.static('./public'));
 app.set('views', __dirname + '/views');
 app.listen(3000);
 
@@ -18,6 +19,8 @@ app.get('/',(req,res)=>{
     res.send('front view');
 });
 
-// app.use('',(req,res)=>{
-//     res.send('<h1> 404 Not Found </h1>');
-// });
+
+
+app.use('',(req,res)=>{
+    res.render('admin/404');
+}); 

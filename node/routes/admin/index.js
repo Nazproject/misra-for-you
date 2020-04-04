@@ -5,11 +5,12 @@ const router   = express.Router();
 const {auth,test} = require('../../middleware/adminMiddleware');
 
 // Controller import
-const {index,user} = require('../../controller/admin/userController');
+const {index,user,table} = require('../../controller/admin/userController');
 
 
 // Routes
 router.get('/',[auth,test], index);
+router.get('/table',auth,table);
 router.get('/user',auth,user);
 
 
