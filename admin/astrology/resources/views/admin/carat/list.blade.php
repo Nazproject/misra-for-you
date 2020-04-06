@@ -2,6 +2,21 @@
 
 @section('content')
 
+{{-- <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>DataTables</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">DataTables</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+</section> --}}
 <?php //echo "<pre>";print_r($list);die;?>
   <section class="content">
     <div class="row">
@@ -33,24 +48,14 @@
           <!-- /.card-header -->
           <div class="card-body">
             <div>
-              <a style="float: right;padding: 1px;" href="{{ route('admin.product.create') }}" class="btn btn-success btn-lg"><i class="fa fa-plus-square" aria-hidden="true"> </i>Add Product</a>
+              <a style="float: right;padding: 1px;" href="{{ route('admin.carat.create') }}" class="btn btn-success btn-lg"><i class="fa fa-plus-square" aria-hidden="true"> </i>Add Carat</a>
             </div>
-            <table id="example1" class="table table-bordered table-striped table-responsive">
+            <table id="example1" class="table table-bordered table-striped">
               <thead>
               <tr>
                 <th>#</th>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Mrp price</th>
-                <th>GST</th>
-                <th>GST rice</th>
-                <th>Discount</th>
-                <th>Price</th>
-                <th>Planet</th>
-                <th>Zodiac sign</th>
-                <th>Stock</th>
-                <th>Count</th>
-                <th>Image</th>
+                <th>Carat</th>
+                <th>Date</th>
                 <th>Action</th>
               </tr>
               </thead>
@@ -58,23 +63,14 @@
               <?php $i=1;
                 foreach($list as $val){
               ?>
+              
               <tr>
                 <td>{{$i}}</td>
-                <td>{{$val->title}}</td>
-                <td>{{$val->category}}</td>
-                <td>{{$val->mrp_price}}</td>
-                <td>{{$val->gst}}</td>
-                <td>{{$val->mrp_gst_price}}</td>
-                <td>{{$val->discount}}</td>
-                <td>{{$val->price}}</td>
-                <td>{{$val->planet}}</td>
-                <td>{{$val->zodiac_sign}}</td>
-                <td>{{$val->stock}}</td>
-                <td>{{$val->product_count}}</td>
-                <td><img src="{{asset('/dist/img/product/'.$val->image.'')}}" style="height: 50px;width: 50px;"></td>
+                <td>{{$val->carat}}</td>
+                <td>{{\Carbon\Carbon::parse($val->created_at)->format('d-m-Y')}}</td>
                 <td>
-                  <a class="btn btn-sm btn-danger" href="{{asset('/admin/product/delete/'.$val->id.'')}}"><i class="fa fa-trash"></i></a>
-                  <a class="btn btn-sm btn-info" href="{{asset('/admin/product/edit/'.$val->id)}}"><i class="fa fa-edit"></i></a>             
+                  <a class="btn btn-sm btn-danger" href="{{asset('/admin/carat/delete/'.$val->id.'')}}"><i class="fa fa-trash"></i></a>
+                  <a class="btn btn-sm btn-info" href="{{asset('/admin/carat/edit/'.$val->id)}}"><i class="fa fa-edit"></i></a>             
                 </td>
               </tr>
               

@@ -28,8 +28,11 @@ Route::get('/home', 'HomeController@index');
 Route::group(['prefix' => 'admin'], function() {
 
   Route::get('/product', 'admin\ProductController@index')->name('admin.product');	
-
-
+  Route::get('/product/create', 'admin\ProductController@create')->name('admin.product.create');
+  Route::post('/product/store', 'admin\ProductController@store')->name('admin.product.store');
+  Route::get('/product/edit/{id}', 'admin\ProductController@edit')->name('admin.product.edit');
+  Route::post('/product/update/{id}', 'admin\ProductController@update')->name('admin.product.update');
+  Route::get('product/delete/{id}', 'admin\ProductController@destroy')->name('admin.product.delete');
 
   Route::get('/category', 'admin\CategoryController@index')->name('admin.category');
   Route::get('/category/create', 'admin\CategoryController@create')->name('admin.category.create');
@@ -37,6 +40,13 @@ Route::group(['prefix' => 'admin'], function() {
   Route::get('/category/edit/{id}', 'admin\CategoryController@edit')->name('admin.category.edit');
   Route::post('/category/update/{id}', 'admin\CategoryController@update')->name('admin.category.update');
   Route::get('category/delete/{id}', 'admin\CategoryController@destroy')->name('admin.category.delete');
+
+  Route::get('/carat', 'admin\CaratController@index')->name('admin.carat');
+  Route::get('/carat/create', 'admin\CaratController@create')->name('admin.carat.create');
+  Route::post('/carat/store', 'admin\CaratController@store')->name('admin.carat.store');
+  Route::get('/carat/edit/{id}', 'admin\CaratController@edit')->name('admin.carat.edit');
+  Route::post('/carat/update/{id}', 'admin\CaratController@update')->name('admin.carat.update');
+  Route::get('carat/delete/{id}', 'admin\CaratController@destroy')->name('admin.carat.delete');
 
   Route::get('/message/delete/{id}', 'admin\MessageController@destroy');
   Route::get('/message', 'admin\MessageController@index')->name('admin.message');
