@@ -15,6 +15,17 @@ class CreateAdvertisesTable extends Migration
     {
         Schema::create('advertises', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('full_name');
+            $table->string('email');
+            $table->string('mobile_no');
+            $table->string('company');
+            $table->string('web_url');
+            $table->string('adv_category');
+            $table->string('start_date');
+            $table->string('end_date');
+            $table->string('note');
+            $table->string('image');
+            $table->enum('status', ['0', '1'])->default(0)->comment('0- pending, 1- verified');
             $table->timestamps();
         });
     }

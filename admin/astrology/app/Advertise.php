@@ -8,7 +8,6 @@ class Advertise extends Model
 {
     protected $table = 'advertises';
     protected $primaryKey = 'id';
-    protected $fillable = [
-        'first_name', 'last_name', 'email','phone','zodiac_sign','content_type'
+    protected $fillable = ['full_name', 'email','mobile_no', 'company','web_url','adv_category','start_date','end_date','note','image','status'
     ];
 }
