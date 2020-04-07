@@ -629,17 +629,18 @@ a {
 
 /* Background Image */
 .bg-image--1 {
-  background-image: url(images/bg/1.jpg);
+  background-image: url(images/bg/shop1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center; 
+   }
 .bg-image--2 {
-  background-image: url(images/bg/2.jpg);
+  background-image: url(images/bg/shop_banner1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 .bg-image--3 {
-  background-image: url(images/bg/3.jpg);
+  background-image: url(images/bg/shop_banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -1778,7 +1779,8 @@ Header Styles
       right: 0;
       top: 50%;
       -webkit-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      transform: translateY(-50%); 
+background-color: orange;}
 .header__area .logo {
   height: 90px;
   line-height: 90px; }
