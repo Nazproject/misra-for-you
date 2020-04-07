@@ -312,6 +312,16 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="{{ route('admin.carat') }}" class="nav-link">
+              <!-- <i class="nav-icon far fa-calendar-alt"></i> -->
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Carat
+                <!-- <span class="badge badge-info right">2</span> -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="{{ route('admin.product') }}" class="nav-link">
               <!-- <i class="nav-icon far fa-image"></i> -->
               <i class="nav-icon fab fa-paypal"></i>

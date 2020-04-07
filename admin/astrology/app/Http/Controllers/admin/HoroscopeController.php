@@ -208,6 +208,7 @@ class HoroscopeController extends Controller
             
             $fileName = time()."_".$file->getClientOriginalName() ;
             $destinationPath = public_path().'/dist/img/horoscope/' ;
+            $file->move($destinationPath,$fileName);
         }else{
             $fileName=$request->old_image;
         } 
