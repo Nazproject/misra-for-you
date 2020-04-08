@@ -1,12 +1,9 @@
 
-
-
-
 <section class="backgroundclr">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xs-12 tpbanner_align">
-                <a href="#" class="header_border1 hidden-xs font12" style="color:white;">Advertise With Us</a>
+                <a href="{{route('advertise')}}" class="header_border1 hidden-xs font12" style="color:white;">Advertise With Us</a>
                 <div class="header_border hidden-xs font12" style="color:white;">Language:
                     <ul>
                         <li class="dropdown lang_dropdown">
