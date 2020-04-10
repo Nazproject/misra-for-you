@@ -20,6 +20,10 @@ Route::get('/zodiac/{special}/{slug}', 'HoroscopeController@horospecial');
 
 Route::get('/horoscopes/{type}/{slug?}', 'HoroscopeController@horoscopebytype');
 Route::post('/message', 'MessageController@index');
+
+Route::post('/advertise/send', 'AdvertiseController@send')->name('advertise.send');
+Route::get('/advertise', 'AdvertiseController@index')->name('advertise');
+
 Route::get('/home', 'HomeController@index');
 
 
