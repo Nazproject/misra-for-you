@@ -15,7 +15,7 @@
                 <script>alert('<?php echo $message;?>');</script>
                 @endif
             </div>
-            <form action="{{route('advertise.send')}}" method="POST">
+            <form action="{{route('advertise.send')}}" method="POST" enctype="multipart/form-data">
             	@csrf
 	            <div class="row">
 	                <form action="#" class="m-t-40">
@@ -25,10 +25,6 @@
 	                            <input type="text" class="form-control" name="full_name" placeholder="Full name" required>
 	                            <span class="text-danger">{{ $errors->first('full_name') }}</span>
 	                        </div>
-	                       <!-- <div class="form-group">
-	                            <label for="ap_date">Date of appointment</label>
-	                            <input type="date" class="form-control" id="ap_date" required>
-	                        </div> !-->
 	                    </div>
 	                    <div class="col-md-6">
 	                        <div class="form-group">
@@ -49,10 +45,6 @@
 	                            <input type="text" class="form-control" name="web_url" placeholder="Website Url" required>
 	                            <span class="text-danger">{{ $errors->first('web_url') }}</span>
 	                        </div>
-	                       <!-- <div class="form-group">
-	                            <label for="name">Full Name</label>
-	                            <input type="text" class="form-control" id="name" placeholder="Full name" required>
-	                        </div>!-->
 	                    </div>
 	                    <div class="col-md-6">
 	                        <div class="form-group">
@@ -74,10 +66,6 @@
 	                            <input type="text" class="form-control" name="mobile_no" placeholder="Mobile" required>
 	                            <span class="text-danger">{{ $errors->first('mobile_no') }}</span>
 	                        </div>
-	                       <!-- <div class="form-group">
-	                            <label for="dob">DOB</label>
-	                            <input type="date" class="form-control" id="dob" required>
-	                        </div>-->
 	                    </div>
 	                    <div class="col-md-6">
 	                       <div class="form-group">

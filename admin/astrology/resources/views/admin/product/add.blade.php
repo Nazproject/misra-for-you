@@ -31,7 +31,7 @@
         <div class="col-md-8">
           <div class="form-group">
             <label>Title</label>
-            <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="0" name="title" placeholder="Enter Product Title">{{old('title') }}</textarea>
+            <textarea class="form-control" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="0" name="title" placeholder="Enter Product Title">{{old('title') }}</textarea>
           </div>
         </div>
         <div class="col-md-4">

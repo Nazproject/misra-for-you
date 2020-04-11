@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\admin;
-
+use App\Product;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 use DB;
 use Log;
 
@@ -78,6 +79,7 @@ class ProductController extends Controller
             $destinationPath = public_path().'/dist/img/product/' ;
             $insert_arr=array(
             'title' => $data['title'],
+            'slug' => SlugService::createSlug(Product::class, 'slug', $data['title']),
             'carat_id'=>$data['carat_id'],
             'mrp_price' => $data['mrp_price'],
             'gst' => $data['gst'],
@@ -171,6 +173,7 @@ class ProductController extends Controller
         }
         $up_arr=array(
             'title' => $data['title'],
+            'slug' => SlugService::createSlug(Product::class, 'slug', $data['title']),
             'carat_id'=>$data['carat_id'],
             'mrp_price' => $data['mrp_price'],
             'gst' => $data['gst'],

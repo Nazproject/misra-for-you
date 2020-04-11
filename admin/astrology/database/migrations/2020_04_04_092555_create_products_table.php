@@ -16,6 +16,7 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title', 225);
+            $table->unique('slug', 'slug');
             $table->string('image', 225);
             $table->float('mrp_price', 11, 2);
             $table->float('mrp_gst_price', 11, 2);
