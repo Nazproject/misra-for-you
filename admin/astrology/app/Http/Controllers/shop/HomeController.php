@@ -27,7 +27,9 @@ class HomeController extends Controller
         ->select('*')
         ->get();
         $product_list = DB::table('products')
-        ->select('*')
+        ->select('products.*','categories.category','carats.carat')
+        ->join('categories','categories.id','=','products.category_id')
+        ->leftJoin('carats','carats.id','=','products.carat_id')
         ->get();
         //dd($product_list);
         return view('shop.home', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list]);//home
@@ -48,9 +50,9 @@ class HomeController extends Controller
         ->leftJoin('carats','carats.id','=','products.carat_id')
         ->where('category_id', $cat_id->id)
         ->get();
-        return view('shop.product_by_category', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list]);//home
+        return view('shop.product_by_category', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list, 'cat_name'=>$category]);//home
     }
-    public function single_product($category,$id)
+    public function single_product($category,$slug)
     {
         $title="Free Horoscope & Astrology";
         $category_list = DB::table('categories')
@@ -60,14 +62,20 @@ class HomeController extends Controller
         ->select('id')
         ->where('category', $category)
         ->first();
+        $related_product = DB::table('products')
+        ->select('products.*','categories.category','carats.carat')
+        ->join('categories','categories.id','=','products.category_id')
+        ->leftJoin('carats','carats.id','=','products.carat_id')
+        ->where('category_id', $cat_id->id)
+        ->get();
         $product_list = DB::table('products')
         ->select('products.*','categories.category','carats.carat')
         ->join('categories','categories.id','=','products.category_id')
         ->leftJoin('carats','carats.id','=','products.carat_id')
         ->where('products.category_id', $cat_id->id)
-        ->where('products.id', decrypt($id))
-        ->get();
-        dd($product_list);
-        return view('shop.single_product', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list]);//home
+        ->where('products.slug', $slug)
+        ->first();
+        //dd($related_product);
+        return view('shop.single_product', ['title'=>$title, 'related_product'=>$related_product, 'category_list'=>$category_list, 'product_list'=>$product_list]);//home
     }
 }

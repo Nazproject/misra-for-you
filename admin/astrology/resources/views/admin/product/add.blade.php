@@ -1,5 +1,7 @@
 @extends('layouts.include.backend.master')
 @section('content')
+
+
 <div class="card">
   <div class="card-header">
     <h3 class="card-title">{{$title}}</h3>
@@ -85,7 +87,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label>Zodiac Sign</label>
-            <select name="zodiac_sign" class="form-control">
+            <select name="zodiac_sign[]" class="select2 form-control" multiple="multiple">
               <option value="">Select Zodiac Sign</option>
               <option value="aries">Aries</option>
               <option value="taurus">Taurus</option>
@@ -102,6 +104,14 @@
             </select>
           </div>
         </div>
+
+
+
+        
+
+
+
+
         <div class="col-md-6">
           <div class="form-group">
             <label>Astrological Planet</label>
@@ -185,7 +195,10 @@
   </form>
 </div>
 @endsection
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+@section('scripts')
 <script>
   $(document).on("change keyup blur", "#tax", function() {
     var main = $('#mrp_gst').val();
@@ -208,3 +221,4 @@ $(document).on("change keyup blur", "#discount", function() {
     $('#price').val(discont);
 });
 </script>
+@endsection

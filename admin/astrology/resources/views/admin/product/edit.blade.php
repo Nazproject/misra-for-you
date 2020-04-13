@@ -32,7 +32,7 @@
         <div class="col-md-8">
           <div class="form-group">
             <label>Title</label>
-            <textarea class="form-control textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="0" name="title" placeholder="Enter Product Title">{{$edit_product->title}}</textarea>
+            <textarea class="form-control" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="0" name="title" placeholder="Enter Product Title">{{$edit_product->title}}</textarea>
           </div>
         </div>
         <div class="col-md-4">
@@ -86,7 +86,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label>Zodiac Sign</label>
-            <select name="zodiac_sign" class="form-control">
+            <select name="zodiac_sign[]" class="select2 form-control" multiple="multiple">
               <option value="">Select Zodiac Sign</option>
               <option value="aries" <?php if($edit_product->zodiac_sign=="aries"){echo "selected";}?>>Aries</option>
               <option value="taurus" <?php if($edit_product->zodiac_sign=="taurus"){echo "selected";}?>>Taurus</option>

@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-6 col-sm-6 col-6 col-lg-2">
 				<div class="logo">
-					<a href="index.html">
+					<a href="{{ asset('/') }}">
 						<img src="{{ asset('shop/images/logo/logo2.png') }}" alt="logo images">
 					</a>
 				</div>
@@ -11,8 +11,8 @@
 			<div class="col-lg-8 d-none d-lg-block">
 				<nav class="mainmenu__nav">
 					<ul class="meninmenu d-flex justify-content-start">
-						<li class="drop with--one--item"><a href="index.html">Home</a></li>
-						<li class="drop"><a href="#">Shop</a>
+						<!-- <li class="drop with--one--item"><a href="index.html">Home</a></li> -->
+						<li class="drop"><a href="{{ asset('/shop') }}">Shop</a>
 							<!--<div class="megamenu mega03">
 								<ul class="item item03">
 									<li class="title">Shop Layout</li>
@@ -47,7 +47,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="drop"><a href="shop-grid.html">Astrologer Suggestion</a>
+						<li class="drop"><a href="#">Astrologer Suggestion</a>
 							
 						</li>
 						
@@ -58,7 +58,7 @@
 				<ul class="header__sidebar__right d-flex justify-content-end align-items-center">
 					
 					<li class="wishlist"><a href="#"></a></li>
-					<li class="shopcart"><a class="cartbox_active" href="#"><span class="product_qun">3</span></a>
+					<li class="shopcart"><a href="{{asset('/shop/checkout')}}"><span class="product_qun">3</span></a>
 						<!-- Start Shopping Cart -->
 					<!--	<div class="block-minicart minicart__active">
 							<div class="minicart-content-wrapper">

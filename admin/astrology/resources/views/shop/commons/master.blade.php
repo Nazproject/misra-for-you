@@ -35,13 +35,19 @@
 	<!-- Main wrapper -->
 	<div class="wrapper" id="wrapper">
 	<!-- Header -->
-	@include('shop.commons.header')
+	
+	<div>
+  		@include('shop.commons.header')
+	</div>
 	<!-- //Header -->
-		<div>
-	  		@yield('content')
-		</div>
+	<div>
+  		@yield('content')
+	</div>
 	<!-- Footer Area -->	
-	@include('shop.commons.footer')
+	
+	<div>
+  		@include('shop.commons.footer')
+	</div>
 	<!-- END QUICKVIEW PRODUCT -->
 	</div>
 

@@ -13,9 +13,11 @@ Auth::routes();
 ///Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
 //Route::post('/register/blogger', 'Auth\RegisterController@createBlogger');
 //Route::view('/home', 'home')->middleware('auth');
-Route::get('/shop/{category}/{id}', 'shop\HomeController@single_product');
+Route::post('/shop/addToCart', 'shop\CartController@addToCart');
+Route::get('/shop/checkout', 'shop\CartController@index');
+Route::get('/shop/{category}/{slug}', 'shop\HomeController@single_product');
 Route::get('/shop/{category}', 'shop\HomeController@Bycategory');
-Route::get('/shop', 'shop\HomeController@index');
+Route::get('/shop/home', 'shop\HomeController@index');
 
 Route::get('/horoscope/{slug}', 'HoroscopeController@index');
 Route::get('/horoscope/{type}/{slug}', 'HoroscopeController@horoscopebytypefetch');

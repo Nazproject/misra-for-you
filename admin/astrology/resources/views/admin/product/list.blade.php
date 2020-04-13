@@ -69,7 +69,7 @@
                 <td>{{$val->price}}</td>
                 <td>{{$val->planet}}</td>
                 <td>{{$val->zodiac_sign}}</td>
-                <td>{{$val->stock}}</td>
+                <td><?php if($val->stock==1){echo "In Stock";}else{echo "Out Of Stock";}?></td>
                 <td>{{$val->product_count}}</td>
                 <td><img src="{{asset('/dist/img/product/'.$val->image.'')}}" style="height: 50px;width: 50px;"></td>
                 <td>

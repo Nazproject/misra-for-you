@@ -81,13 +81,21 @@
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
+                    <a href="{{ asset('/shop') }}">
+                        <div class="bg-info header_bg center-block">
+                            <img src="{{ asset('frontend/images/shop5.png') }}" alt="Image missing">
+                        </div>
+                        <div class="text-center info1 font13 ">Shop</div>
+                    </a>
+                </div>
+                <!-- <div class="col-sm-2 col-xs-2 text-center head_signs">
                     <a href="#">
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/man-with-tie.png') }}" alt="Image missing">
                         </div>
                         <div class="text-center info1 font13 ">{{__('msg.Career')}}</div>
                     </a>
-                </div>
+                </div> -->
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
                 <ul class="navbar-nav ml-auto" style="margin-top: -28px;">
                   <li class="nav-item dropdown" style="list-style-type: none;" >
