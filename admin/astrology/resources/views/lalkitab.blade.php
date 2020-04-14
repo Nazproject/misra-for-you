@@ -1,34 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.include.frontend.master')
+@section('title')
+    {{ $title ?? 'Astrology' }}
+@endsection
+@section('content')
 
-<!-- Mirrored from demo.lorvent.com/astrology/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Feb 2020 04:33:53 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Homepage | Astrology</title>
-    <!--=============== Global Css Start ===============-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="vendors/bootstrap_select2/css/select2-bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/wow/css/animate.css">
-    <link rel="stylesheet" href="css/sweetalert2.css">
-    <link rel="stylesheet" href="vendors/revolution-slider/css/layers.css">
-    <link rel="stylesheet" href="vendors/revolution-slider/css/navigation.css">
-    <link rel="stylesheet" href="vendors/revolution-slider/css/settings.css">
-    <!--=============== Global Css End ===============-->
-    <!--=============== Custom Css Start ===============-->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!--=============== Custom Css End ===============-->
-
-</head>
 <style type="text/css">
     .tab {
   overflow: hidden;
@@ -66,203 +41,15 @@
   border-top: none;
 }
 </style>
-<body style="background-image: url('images/body_image.jpg');">
-<!--=============== Preloader Section Start ===============-->
-<div class="preloader" style="position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100000;
-  backface-visibility: hidden;
-  background: #ffffff;">
-    <div class="preloader-image" style="position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -150px 0 0 -300px;">
-        <img src="images/preloader.gif" alt="loader-missing">
-    </div>
-</div>
-<section class="backgroundclr">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-xs-12 tpbanner_align">
-                <a href="#" class="header_border1 font12" style="color:white;">Advertise With Us</a>
-                <div class="header_border  font12" style="color:white;">Language:
-                    <ul>
-                        <li class="dropdown lang_dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color:#ff7800;">EN <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Hindi</a></li>
-                                <li><a href="#">English</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clearfix visible-xs-block"></div>
-                <span class="header_border header_text hidden-xs font12" style="color:white;">Follow Us</span>
-                <span class="head_icons"><a href="#"><i class="fa fa-facebook-square header_icons fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-twitter-square header_icons fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-google-plus-square header_icons fa-lg" aria-hidden="true"></i></a>
-                </span>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="container">
-    <div class="row text-right">
-        <div class="col-md-5 col-sm-2"></div>
-        <div class="col-md-7 col-sm-10 col-xs-12">
-            <div class="clearfix visible-sm-block"></div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-2 head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/cancer.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13">Rashifal</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/kundli3.png" alt="Image missing" style="width: 20px; height: 20px;">
-                        </div>
-                        <div class="text-center info1 font13 ">Kundli</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/calendar.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 ">Calender 2020</div>
-                    </a>
-                </div>
 
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/panchang4.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 ">Panchang</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/shop5.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 ">Shop</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/contact.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 ">Contact Me</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="row">
-                
-                <div class="navbar-header col-md-4 col-sm-5 col-xs-12 nav_head">
-                    
-                    <button type="button" class="navbar-toggle m-t-20 font18" data-toggle="collapse"
-                            data-target="#myNavbar">
-                        <span>
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                    <a href="#">
-                        <img src="images/logo6.png" alt="logo missing" class="brand_name" style="height: 90px; width:90px;"> <span
-                            class="text-info font42"></span>
-                    </a>
-                    <p class="brand_name text-primary font12 head_info" style="font-family: samarkan; font-size:16px; color: black;">MISHRA 4 YOU</p>
-
-                </div>  
-                <div class="navbar-collapse collapse col-md-8 col-sm-7 col-xs-12 nav navbar-right nav_menubar"
-                     id="myNavbar">
-                    <ul class="nav navbar-nav header_nav">
-                        <li class="header_li active">
-                            <a href="#" class="text-info">
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="dropdown dropdown_modified">
-                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">2020 <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
-                                data-dropdown-out="fadeOut">
-                                <li><a href="signs_single_post.html">Rashifal 2020</a></li>
-                                <li><a href="signs_single_post.html">Grahan 2020</a></li>
-                                <li><a href="signs_single_post.html">Horoscope 2020</a></li>
-                                <li><a href="signs_single_post.html">Lal Kitab Horoscope 2020</a></li>
-                                
-                                
-                            </ul>
-                        </li>
-                        <li class="header_li">
-                            <a href="#" class="text-info">Gemstones Report</a>
-                        </li>
-
-
-                        <li class="header_li">
-                            <a href="#" class="text-info">Lal Kitab</a>
-                        </li>
-                        
-                        <li class="header_li">
-                            <a href="#" class="text-info">Festivals</a>
-                        </li>
-                        
-                       
-                        <li class="dropdown dropdown_modified">
-                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Horoscope <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
-                                data-dropdown-out="fadeOut">
-                                <li><a href="signs_single_post.html">Daily Horoscope</a></li>
-                                <li><a href="signs_single_post.html">Weekly Horoscope</a></li>
-                                <li><a href="signs_single_post.html">Monthly Horoscope</a></li>
-                                <li><a href="signs_single_post.html">Yearly Horoscope</a></li>
-                                
-                                
-                            </ul>
-                        </li>
-                        <li class="dropdown dropdown_modified">
-                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Misc <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
-                                data-dropdown-out="fadeOut">
-                                <li><a href="signs_single_post.html">Contact Astrologer</a></li>
-                                <li><a href="signs_single_post.html">Career Forecast</a></li>
-                                <li><a href="signs_single_post.html">Love Forecast</a></li>
-                                <li><a href="signs_single_post.html">Donate</a></li>
-                                
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-<div style="background-image: url('images/ganesh3.jpg');">
+<div style="background-image: url({{ asset('frontend/images/ganesh3.jpg') }});">
 <div class="container" style="background-color: #4a4a4a;">
     <div class="row">
         <div class="col-md-8 col-xs-12 m-t-40">
            <!-- <span class="text-primary font35"><img
                     src="images/leo-sign.png"
                     alt="logo missing"> Leo Horoscope </span>-->
-                    <h3 style="color: orange;"> About Us</h3>
+                    <h3 style="color: orange;"> Lal Kitab</h3>
                     <h4 style="color: white;">हिंदी में पढ़े</h4>
              
                       
@@ -469,7 +256,9 @@
                     </div>
                 </div>
             </div>!-->
-            
+            <p style="color: white;">Vedic Astrology has the answer to almost all your problems. Be it the tension in your life, your family, relation or your job. One of the most important branches of this Astrology is Lal Kitab. If you’re not familiar with the term Lal Kitab, let us find out what it is?
+
+            </p>
          <!--   <div class="row">
                 <div class="col-xs-12 m-t-26">
                     <i class="fa fa-envelope header_icons" aria-hidden="true"></i>
@@ -478,17 +267,90 @@
             </div>!-->
             <section class="hr_bottom_align">
                 <div class="row">
-                    <p style="color: white; margin-left: 80px;" >Mishra4you is the solution to all your astrology related queries. The idea behind Mishra4you was to make Astrology understandable. It is meant for all and not only for the highly educated and trained. So, the portal has been designed in such a way that anyone who is seeking astrological assistance can find the solution for his or her problems. Our basic aim is to help the ones in need and support them to lead a better and cheerful life. 
-The science of astrology was made to achieve these two only. Our portal provides you with regular horoscope updates, Kundali Matching, Lal Kitab etc. that you can use to eliminate the problems in your life. The Mishra4You team works tirelessly to make your experience better so that you can use the divine science of astrology in every aspect of your life.
-
+                    <p style="color: white; margin-left: 80px;" >What is a Lal Kitab?
+Lal Kitab is a collection of 5 books which introduce us to a new style of horoscopic analysis allowing us with a quick solution and affordable remedies. The books are written in ancient Urdu language between 1939 and 1952. Although the authorship of the books is disputed, the deeper resources show that these books were compiled by Pt. Roop Chand Joshi. As we discussed above, the books are written in Urdu and not in the verses of Sanskrit. In this book, astrological calculations are based on a permanent master planet. Here, Aries Zodiac Sign has been assigned the first house, Taurus the second house and in a similar manner all the 12 quarters are filled up. The Lal Kitab is of much importance as it mentions the measures which are pretty easy to perform even for a normal person. With the help of these remedies, anyone gets rid of the problems and defects they are currently facing in their life. 
 
                     </p>
                 </div>
                 <hr>
-                
+                <div class="m-t-40 swiper-container single_swiper">
+                    <p style="color: white;">What are the features of Lal Kitab?
+Lal Kitab aimed to make Astrology and Horoscope reading simpler. It is so simple that a normal person can examine his/her situation by comparing the circumstances around him. Through this, he will be able to produce results easily. The rules of Lal Kitab are different from the Vedic Astrology. For example: If a person is born in Zodiac Sign Taurus, his birth chart will be written accordingly. But, on the other hand, that’s not the case for Lal Kitab. Here, every house has a specific position and sequence like the first house will be written in Aries, followed by Taurus and so on. 
+
+                    </p>
+                </div>
             </section>
-            
-            
+            <div class="row m-t-26">
+                <p style="color: white;  margin-left: 20px;">In this book, the most important terms for you are:
+                    <ul style="color: orange;">
+<li>  Pakka Ghar or Permanent Home</li>
+<li>  Soya Hua Grah or Position of the Sleeping Planet</li>
+<li> Soya Hua Ghar or Sleeping Position of the House</li>
+<li>  Sathi Grah or Companion Planets</li>
+<li> Dharmik Teva or Religious Teva</li>
+Each of them is described below in detail. Let’s check it out. 
+
+</ul>
+
+<hr>
+                </p>
+
+            </div>
+            <div class="row m-t-40">
+                <h3 style="color: orange; margin-left: 40px;"> Pakka Ghar</h3>
+                <p style="color: white;  margin-left: 20px;">
+Unlike Vedic Astrology, every house does not have a fixed nature in this book. Here, Aries has been given the first house, Taurus the second followed by Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, and Pisces. 
+Since the lord of the Aries is Mangal, that’s why the Pakka Ghar of Mars will be the first house. The permanent House of the Moon is the fourth one, while the Ninth and Tenth houses are occupied by Jupiter. The eleventh house is considered as the permanent home of the Saturn according to the Lal Kitab.</p><hr>
+<h3 style="color: orange;  margin-left: 40px;">Soya Hua Grah Or Sleeping Position of the Planet</h3> 
+<p style="color: white;  margin-left: 20px;">
+The Planets except those who have been already assigned a Pakka Grah or a permanent home are known as the Soya Hua Grah or in the Sleeping Position. They are known as the Soya Hua Grah or in the sleeping position because their effects are purely limited. Their effects are only due to the location of the house. 
+Consider a situation for a Kundali where Venus has been assigned the fourth quote or position, and the tenth position is empty. In such a case, the seventh sight of Venus will be directly on the tenth house. But since its empty, its effects will be only limited to the fourth house and it will conduce accordingly.
+<h3 style="color: orange;  margin-left: 40px;"> Soya Hua Ghar or Sleeping Position of the House </h3>
+ <p style="color: white;  margin-left: 20px;">
+If a house is empty in a Lal Kitab Kundali or is out of sight of any other planet, it is considered as Soya Hua Ghar or Sleeping Position. This means that the planet can’t be of any help unless it is awakened up by some remedies. Following are some remedies that are mentioned in the Lal Kitab for the awakening of Soya Hua Ghar:
+<ul style="color: orange;">
+<li>  Mars remedies should be followed to awaken the first house.</li>
+<li>  Moon remedies should be followed to awaken the Second house.</li>
+<li> Mercury remedies should be used to awaken the third house.</li>
+<li> Moon remedies should be followed to awaken the fourth house.</li>
+<li> Sun remedies should be used to awaken the fifth house.</li>
+<li>  Rahu remedies should be used to awaken the sixth house.</li>
+<li>  Venus remedies should be followed to awaken the seventh house.</li>
+<li>  Moon remedies should be used to awaken the eighth house.</li>
+<li> Jupiter remedies should be used to awaken the ninth house.</li>
+<li>  Saturn remedies should be used to awaken the tenth house.</li>
+<li> Jupiter remedies should be followed to awaken the eleventh house.</li>
+<li> Ketu remedies should be followed to awaken the twelfth house.</li>
+</ul>
+</p>
+<h3 style="color: orange;  margin-left: 40px;">  Sathi Planets or Companion Planets </h3>
+<p style="color: white;  margin-left: 20px;">
+According to the Lal Kitab, the Sathi Grah or the Companion Planets are those which sit in one another’s Pakka Ghar or Permanent Home position. In such a case, these planets do not have a bad effect on each other. This interchanging of positions conduces a good effect, unlike Vedic Astrology where some Planets are enemies to one another.</p> 
+<h3 style="color: orange;  margin-left: 40px;"> Dharmik Teva or the Religious Teva</h3>
+<p style="color: white;  margin-left: 20px;">
+According to the book, if the planet Saturn and Jupiter form a sum in the Kundali, then this condition is known as the Dharmi or the Righteous Teva. This is considered a good omen and such a situation eliminate all the difficulties in one’s life. 
+Moreover, if these two planets sum up in the sixth, ninth or the eleventh house, it brings good effects to one’s life. 
+Other than the above-mentioned terms, we have the Blind Planet or Blind Teva which is known as Andha Teva and Minor Teva or Nabalig Teva.
+Apart from that, the book covers the following types of debts:</p>
+<ul style="color: orange;">
+<li>  The Debt of Father or Pitr Rin</li>
+<li>  The Debt of Mother or Matr Rin</li>
+<li>  The Debt of Brother or Bhratra Rin</li>
+<li> The Debt of Sister or Bahin Rin</li>
+<li>  The Debt of Daughter or Putri Rin</li>
+<li>  The Debt of Woman or Stree Rin</li>
+<li>  The Debt of Cruelty or Nirdayi Rin</li>
+<li>  The Debt of Unborn or Ajanma Rin</li>
+<li>   The Debt of Self or Swa Rin</li>
+<li>  The Debt of Divine or Daiviya Rin</li>
+
+</ul>
+ 
+
+
+
+                </p>
+            </div>
         </div>
         <div class="col-md-4 col-xs-12 m-t-40" style="background-color: white;">
             <div class="row">
@@ -499,7 +361,7 @@ The science of astrology was made to achieve these two only. Our portal provides
             </div>
             <div class="row">
                 <div class="col-xs-12 font16 games_align">
-            <img src="images/mishra4youTV.jpg" style="height: 150px; width: 350px;">
+            <img src="{{ asset('frontend/images/mishra4youTV.jpg') }}" style="height: 150px; width: 350px;">
             <center>
             <button>Subscribe</button></center>
                     <hr class="hr_margin">
@@ -650,13 +512,13 @@ The science of astrology was made to achieve these two only. Our portal provides
             </div>
             <div class="row common_margin">
                <ul>
-                 <li style="list-style-type: none;"><img src="images/gemstone1.jpg" style="height: 150px; width: 350px;" ></li>  
+                 <li style="list-style-type: none;"><img src="{{ asset('frontend/images/gemstone1.jpg') }}" style="height: 150px; width: 350px;" ></li>  
                   <hr class="hr_margin">
-                  <li style="list-style-type: none;"><img src="images/gemstone2.jpg" style="height: 150px; width: 350px;" ></li>  
+                  <li style="list-style-type: none;"><img src="{{ asset('frontend/images/gemstone2.jpg') }}" style="height: 150px; width: 350px;" ></li>  
                   <hr class="hr_margin">
-                  <li style="list-style-type: none;"><img src="images/gemstone3.jpg" style="height: 150px; width: 350px;" ></li>  
+                  <li style="list-style-type: none;"><img src="{{ asset('frontend/images/gemstone3.jpg') }}" style="height: 150px; width: 350px;" ></li>  
                   <hr class="hr_margin">
-                  <li style="list-style-type: none;"><img src="images/gemstone4.jpg" style="height: 150px; width: 350px;" ></li>  
+                  <li style="list-style-type: none;"><img src="{{ asset('frontend/images/gemstone4.jpg') }}" style="height: 150px; width: 350px;" ></li>  
                   <hr class="hr_margin">
                </ul>
             </div>
@@ -665,7 +527,12 @@ The science of astrology was made to achieve these two only. Our portal provides
 </div>
 </div>
 
-<section class="footer_bg" style="background-image: url('images/section_background.jpg');">
+
+
+
+
+
+<section class="footer_bg" style="background-image: url({{ asset('frontend/images/section_background.jpg') }});">
     <div class="container footer_align">
         <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
@@ -686,22 +553,22 @@ The science of astrology was made to achieve these two only. Our portal provides
                 <hr>
                <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/shop1.png" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop1.png') }}" style="height: 126px; width: 126px;">
                     <caption >Gemstones</caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/shop2.png" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop2.png') }}" style="height: 126px; width: 126px;">
                     <caption >Rudraksh Mala</caption>
                 </div>
                </div>
 
                <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/shop3.png" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop3.png') }}" style="height: 126px; width: 126px;">
                     <caption >Ask A Question</caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/shop4.png" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop4.png') }}" style="height: 126px; width: 126px;">
                     <caption> Yearly Books</caption>
                 </div>
                </div>
@@ -711,22 +578,22 @@ The science of astrology was made to achieve these two only. Our portal provides
                 <hr>
                  <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/Celebrity1.jpg" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/Celebrity1.jpg') }}" style="height: 126px; width: 126px;">
                     <caption>Amitabh </caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/Celebrity2.jpg" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/Celebrity2.jpg') }}" style="height: 126px; width: 126px;">
                     <caption>Narendra Modi</caption>
                 </div>
                </div>
 
                <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/celebrity3.jpg" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/celebrity3.jpg') }}" style="height: 126px; width: 126px;">
                     <caption >Virat Kohli</caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/celebrity4.jpg" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/celebrity4.jpg') }}" style="height: 126px; width: 126px;">
                     <caption>Kapil Sharma</caption>
                 </div>
                </div>
@@ -839,23 +706,23 @@ The science of astrology was made to achieve these two only. Our portal provides
                 <hr>
                 <div class="row">
                     <div class="col-sm-12 m-t-10">
-                        <img src="images/add.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
                 <div class="row m-t-20">
                     <div class="col-xs-6">
-                        <img src="images/add2.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add2.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                     <div class="col-xs-6">
-                        <img src="images/add3.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add3.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
                 <div class="row m-t-20">
                     <div class="col-xs-6">
-                        <img src="images/add4.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add4.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                     <div class="col-xs-6">
-                        <img src="images/add5.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add5.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
             </div>
@@ -869,61 +736,9 @@ The science of astrology was made to achieve these two only. Our portal provides
         </a>
     </div>
 </section>
-<section class="footer_texture m-t-65">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-xs-12 footer_section_align">
-                <span class="text-white font18">Get Your </span><span class="text-primary font24"> Daily Horoscope<span
-                    class="text-white font18">,</span> Daily Careerscope</span><span
-                    class="text-white font18"> and</span><span class="text-primary font24"> Daily Lovescope </span> <span
-                    class="text-white font18">Directly In Your Inbox</span>
-            </div>
-            <div class="col-md-6 col-xs-12 footer_section_align">
+@endsection
+@section('scripts')
 
-                <form method="post" action="https://demo.lorvent.com/astrology/subscribe.php" id="subscribe">
-                    <div class="form-group">
-
-                        <div class="input-group label_align">
-
-                            <input type="email" class="form-control input-lg input_email sub_input" placeholder="Email Address" name="email" id="email">
-
-                            <span class="input-group-addon subscribe_align">
-        <button type="submit" class="subscribe btn btn-sm ">
-                        <span>
-                            <img src="images/mail-sent.png" alt="mailicon">
-                        </span>
-                            </button>
-                        </span>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="container">
-    <span>Rashifal | Astrology | Kundli | Kundli Matching | Horoscope 2020 | Panchang | Career | Love | Gemstone Report | Lal Kitab | Love Calculator | Astrology Shop
-    Premium Publication | Celebrity Horoscope | Advertisement | Festivals | Zodiac Sign Finder | forecast 2020 | Blog | Choose language
-     Contact Us | About Us | Feedback | Meet The Author | Top stories | Contribute Here</span>
-    <br>
-    <center>
-    <p> © Copyright 2020: All Rights Reserved Mishra4You </p></center>
-</div>
-<!--end of vasthu online-->
-
-<!--=============== Body Section End ===============-->
-<!--=============== Footer Section Start ===============-->
-
-<!--=============== Footer Section End ===============-->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="vendors/swiper/js/swiper.min.js"></script>
-<script type="text/javascript" src="vendors/select2/js/select2.min.js"></script>
-<script src="vendors/wow/js/wow.min.js"></script>
-<script src="vendors/sweetalert2/js/sweetalert2.min.js"></script>
-<!--=============== Custom Js Start ===============-->
-<script src="js/custom.js"></script>
-<!--=============== Custom Js End ===============-->
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -939,8 +754,4 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 </script>
-<!--=============== Custom Js End ===============-->
-</body>
-
-<!-- Mirrored from demo.lorvent.com/astrology/vasthu.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Feb 2020 04:34:44 GMT -->
-</html>
+@endsection

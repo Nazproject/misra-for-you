@@ -30,8 +30,11 @@ Route::post('/advertise/send', 'AdvertiseController@send')->name('advertise.send
 Route::get('/advertise', 'AdvertiseController@index')->name('advertise');
 
 Route::get('/home', 'HomeController@index');
-
-
+Route::get('/about_us', 'HomeController@about_us');
+Route::get('/lalkitab', 'HomeController@lalkitab');
+Route::get('/calender', 'HomeController@calender');
+Route::get('/festival', 'HomeController@festival');
+Route::get('/contact_us', 'HomeController@contact_us');
 
 	
 Route::group(['prefix' => 'admin'], function() {

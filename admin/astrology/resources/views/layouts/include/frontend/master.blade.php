@@ -72,7 +72,7 @@
 <!--=============== Custom Js Start ===============-->
 <script src="{{ asset('frontend/js/custom.js') }}"></script>
 <!--=============== Custom Js End ===============-->
-
+@yield('scripts')
 </body>
 
 <!-- Mirrored from demo.lorvent.com/astrology/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Feb 2020 04:34:12 GMT -->
