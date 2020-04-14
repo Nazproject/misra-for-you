@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from demo.lorvent.com/astrology/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Feb 2020 04:33:53 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Homepage | Astrology</title>
-    <!--=============== Global Css Start ===============-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="vendors/bootstrap_select2/css/select2-bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/wow/css/animate.css">
-    <link rel="stylesheet" href="css/sweetalert2.css">
-    <link rel="stylesheet" href="vendors/revolution-slider/css/layers.css">
-    <link rel="stylesheet" href="vendors/revolution-slider/css/navigation.css">
-    <link rel="stylesheet" href="vendors/revolution-slider/css/settings.css">
-    <!--=============== Global Css End ===============-->
-    <!--=============== Custom Css Start ===============-->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!--=============== Custom Css End ===============-->
-
-</head>
+@extends('layouts.include.frontend.master')
+@section('title')
+    {{ $title ?? 'Astrology' }}
+@endsection
+@section('content')
 <style type="text/css">
     .tab {
   overflow: hidden;
@@ -66,196 +40,7 @@
   border-top: none;
 }
 </style>
-<body style="background-image: url('images/body_image.jpg');">
-<!--=============== Preloader Section Start ===============-->
-<div class="preloader" style="position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100000;
-  backface-visibility: hidden;
-  background: #ffffff;">
-    <div class="preloader-image" style="position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -150px 0 0 -300px;">
-        <img src="images/preloader.gif" alt="loader-missing">
-    </div>
-</div>
-<section class="backgroundclr">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-xs-12 tpbanner_align">
-                <a href="#" class="header_border1 font12" style="color:white;">Advertise With Us</a>
-                <div class="header_border  font12" style="color:white;">Language:
-                    <ul>
-                        <li class="dropdown lang_dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color:#ff7800;">EN <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Hindi</a></li>
-                                <li><a href="#">English</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clearfix visible-xs-block"></div>
-                <span class="header_border header_text hidden-xs font12" style="color:white;">Follow Us</span>
-                <span class="head_icons"><a href="#"><i class="fa fa-facebook-square header_icons fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-twitter-square header_icons fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-google-plus-square header_icons fa-lg" aria-hidden="true"></i></a>
-                </span>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="container">
-    <div class="row text-right">
-        <div class="col-md-5 col-sm-2"></div>
-        <div class="col-md-7 col-sm-10 col-xs-12">
-            <div class="clearfix visible-sm-block"></div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-2 head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/cancer.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13">Rashifal</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/kundli3.png" alt="Image missing" style="width: 20px; height: 20px;">
-                        </div>
-                        <div class="text-center info1 font13 ">Kundli</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/calendar.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 ">Calender 2020</div>
-                    </a>
-                </div>
-
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/panchang4.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 ">Panchang</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/shop5.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 ">Shop</div>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="#">
-                        <div class="bg-info header_bg center-block">
-                            <img src="images/contact.png" alt="Image missing">
-                        </div>
-                        <div class="text-center info1 font13 ">Contact Me</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="row">
-                
-                <div class="navbar-header col-md-4 col-sm-5 col-xs-12 nav_head">
-                    
-                    <button type="button" class="navbar-toggle m-t-20 font18" data-toggle="collapse"
-                            data-target="#myNavbar">
-                        <span>
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                    <a href="#">
-                        <img src="images/logo6.png" alt="logo missing" class="brand_name" style="height: 90px; width:90px;"> <span
-                            class="text-info font42"></span>
-                    </a>
-                    <p class="brand_name text-primary font12 head_info" style="font-family: samarkan; font-size:16px; color: black;">MISHRA 4 YOU</p>
-
-                </div>  
-                <div class="navbar-collapse collapse col-md-8 col-sm-7 col-xs-12 nav navbar-right nav_menubar"
-                     id="myNavbar">
-                    <ul class="nav navbar-nav header_nav">
-                        <li class="header_li active">
-                            <a href="#" class="text-info">
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="dropdown dropdown_modified">
-                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">2020 <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
-                                data-dropdown-out="fadeOut">
-                                <li><a href="signs_single_post.html">Rashifal 2020</a></li>
-                                <li><a href="signs_single_post.html">Grahan 2020</a></li>
-                                <li><a href="signs_single_post.html">Horoscope 2020</a></li>
-                                <li><a href="signs_single_post.html">Lal Kitab Horoscope 2020</a></li>
-                                
-                                
-                            </ul>
-                        </li>
-                        <li class="header_li">
-                            <a href="#" class="text-info">Gemstones Report</a>
-                        </li>
-
-
-                        <li class="header_li">
-                            <a href="#" class="text-info">Lal Kitab</a>
-                        </li>
-                        
-                        <li class="header_li">
-                            <a href="#" class="text-info">Festivals</a>
-                        </li>
-                        
-                       
-                        <li class="dropdown dropdown_modified">
-                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Horoscope <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
-                                data-dropdown-out="fadeOut">
-                                <li><a href="signs_single_post.html">Daily Horoscope</a></li>
-                                <li><a href="signs_single_post.html">Weekly Horoscope</a></li>
-                                <li><a href="signs_single_post.html">Monthly Horoscope</a></li>
-                                <li><a href="signs_single_post.html">Yearly Horoscope</a></li>
-                                
-                                
-                            </ul>
-                        </li>
-                        <li class="dropdown dropdown_modified">
-                            <a data-toggle="dropdown" href="#" class="text-info dropdown-toggle">Misc <span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
-                                data-dropdown-out="fadeOut">
-                                <li><a href="signs_single_post.html">Contact Astrologer</a></li>
-                                <li><a href="signs_single_post.html">Career Forecast</a></li>
-                                <li><a href="signs_single_post.html">Love Forecast</a></li>
-                                <li><a href="signs_single_post.html">Donate</a></li>
-                                
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-<div style="background-image: url('images/ganesh3.jpg');">
+<div style="background-image: url({{ asset('frontend/images/ganesh3.jpg') }});">
 <div class="container" style="background-color: #4a4a4a;">
     <div class="row">
         <div class="col-md-8 col-xs-12 m-t-40">
@@ -499,7 +284,7 @@ The science of astrology was made to achieve these two only. Our portal provides
             </div>
             <div class="row">
                 <div class="col-xs-12 font16 games_align">
-            <img src="images/mishra4youTV.jpg" style="height: 150px; width: 350px;">
+            <img src="{{ asset('frontend/images/mishra4youTV.jpg') }}" style="height: 150px; width: 350px;">
             <center>
             <button>Subscribe</button></center>
                     <hr class="hr_margin">
@@ -650,13 +435,13 @@ The science of astrology was made to achieve these two only. Our portal provides
             </div>
             <div class="row common_margin">
                <ul>
-                 <li style="list-style-type: none;"><img src="images/gemstone1.jpg" style="height: 150px; width: 350px;" ></li>  
+                 <li style="list-style-type: none;"><img src="{{ asset('frontend/images/gemstone1.jpg') }}" style="height: 150px; width: 350px;" ></li>  
                   <hr class="hr_margin">
-                  <li style="list-style-type: none;"><img src="images/gemstone2.jpg" style="height: 150px; width: 350px;" ></li>  
+                  <li style="list-style-type: none;"><img src="{{ asset('frontend/images/gemstone2.jpg') }}" style="height: 150px; width: 350px;" ></li>  
                   <hr class="hr_margin">
-                  <li style="list-style-type: none;"><img src="images/gemstone3.jpg" style="height: 150px; width: 350px;" ></li>  
+                  <li style="list-style-type: none;"><img src="{{ asset('frontend/images/gemstone3.jpg') }}" style="height: 150px; width: 350px;" ></li>  
                   <hr class="hr_margin">
-                  <li style="list-style-type: none;"><img src="images/gemstone4.jpg" style="height: 150px; width: 350px;" ></li>  
+                  <li style="list-style-type: none;"><img src="{{ asset('frontend/images/gemstone4.jpg') }}" style="height: 150px; width: 350px;" ></li>  
                   <hr class="hr_margin">
                </ul>
             </div>
@@ -665,7 +450,7 @@ The science of astrology was made to achieve these two only. Our portal provides
 </div>
 </div>
 
-<section class="footer_bg" style="background-image: url('images/section_background.jpg');">
+<section class="footer_bg" style="background-image: url({{ asset('frontend/images/section_background.jpg') }});">
     <div class="container footer_align">
         <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12 m-t-40">
@@ -686,22 +471,22 @@ The science of astrology was made to achieve these two only. Our portal provides
                 <hr>
                <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/shop1.png" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop1.png') }}" style="height: 126px; width: 126px;">
                     <caption >Gemstones</caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/shop2.png" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop2.png') }}" style="height: 126px; width: 126px;">
                     <caption >Rudraksh Mala</caption>
                 </div>
                </div>
 
                <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/shop3.png" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop3.png') }}" style="height: 126px; width: 126px;">
                     <caption >Ask A Question</caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/shop4.png" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/shop4.png') }}" style="height: 126px; width: 126px;">
                     <caption> Yearly Books</caption>
                 </div>
                </div>
@@ -711,22 +496,22 @@ The science of astrology was made to achieve these two only. Our portal provides
                 <hr>
                  <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/Celebrity1.jpg" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/Celebrity1.jpg') }}" style="height: 126px; width: 126px;">
                     <caption>Amitabh </caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/Celebrity2.jpg" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/Celebrity2.jpg') }}" style="height: 126px; width: 126px;">
                     <caption>Narendra Modi</caption>
                 </div>
                </div>
 
                <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/celebrity3.jpg" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/celebrity3.jpg') }}" style="height: 126px; width: 126px;">
                     <caption >Virat Kohli</caption>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6" style="color: white;">
-                    <img src="images/celebrity4.jpg" style="height: 126px; width: 126px;">
+                    <img src="{{ asset('frontend/images/celebrity4.jpg') }}" style="height: 126px; width: 126px;">
                     <caption>Kapil Sharma</caption>
                 </div>
                </div>
@@ -839,23 +624,23 @@ The science of astrology was made to achieve these two only. Our portal provides
                 <hr>
                 <div class="row">
                     <div class="col-sm-12 m-t-10">
-                        <img src="images/add.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
                 <div class="row m-t-20">
                     <div class="col-xs-6">
-                        <img src="images/add2.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add2.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                     <div class="col-xs-6">
-                        <img src="images/add3.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add3.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
                 <div class="row m-t-20">
                     <div class="col-xs-6">
-                        <img src="images/add4.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add4.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                     <div class="col-xs-6">
-                        <img src="images/add5.jpg" alt="ad" class="img-responsive center-block"/>
+                        <img src="{{ asset('frontend/images/add5.jpg') }}" alt="ad" class="img-responsive center-block"/>
                     </div>
                 </div>
             </div>
@@ -869,61 +654,9 @@ The science of astrology was made to achieve these two only. Our portal provides
         </a>
     </div>
 </section>
-<section class="footer_texture m-t-65">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-xs-12 footer_section_align">
-                <span class="text-white font18">Get Your </span><span class="text-primary font24"> Daily Horoscope<span
-                    class="text-white font18">,</span> Daily Careerscope</span><span
-                    class="text-white font18"> and</span><span class="text-primary font24"> Daily Lovescope </span> <span
-                    class="text-white font18">Directly In Your Inbox</span>
-            </div>
-            <div class="col-md-6 col-xs-12 footer_section_align">
+@endsection
+@section('scripts')
 
-                <form method="post" action="https://demo.lorvent.com/astrology/subscribe.php" id="subscribe">
-                    <div class="form-group">
-
-                        <div class="input-group label_align">
-
-                            <input type="email" class="form-control input-lg input_email sub_input" placeholder="Email Address" name="email" id="email">
-
-                            <span class="input-group-addon subscribe_align">
-        <button type="submit" class="subscribe btn btn-sm ">
-                        <span>
-                            <img src="images/mail-sent.png" alt="mailicon">
-                        </span>
-                            </button>
-                        </span>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="container">
-    <span>Rashifal | Astrology | Kundli | Kundli Matching | Horoscope 2020 | Panchang | Career | Love | Gemstone Report | Lal Kitab | Love Calculator | Astrology Shop
-    Premium Publication | Celebrity Horoscope | Advertisement | Festivals | Zodiac Sign Finder | forecast 2020 | Blog | Choose language
-     Contact Us | About Us | Feedback | Meet The Author | Top stories | Contribute Here</span>
-    <br>
-    <center>
-    <p> © Copyright 2020: All Rights Reserved Mishra4You </p></center>
-</div>
-<!--end of vasthu online-->
-
-<!--=============== Body Section End ===============-->
-<!--=============== Footer Section Start ===============-->
-
-<!--=============== Footer Section End ===============-->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="vendors/swiper/js/swiper.min.js"></script>
-<script type="text/javascript" src="vendors/select2/js/select2.min.js"></script>
-<script src="vendors/wow/js/wow.min.js"></script>
-<script src="vendors/sweetalert2/js/sweetalert2.min.js"></script>
-<!--=============== Custom Js Start ===============-->
-<script src="js/custom.js"></script>
-<!--=============== Custom Js End ===============-->
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -939,8 +672,4 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 </script>
-<!--=============== Custom Js End ===============-->
-</body>
-
-<!-- Mirrored from demo.lorvent.com/astrology/vasthu.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Feb 2020 04:34:44 GMT -->
-</html>
+@endsection
