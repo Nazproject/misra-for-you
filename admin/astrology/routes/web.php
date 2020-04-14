@@ -21,9 +21,9 @@ Route::get('/shop/home', 'shop\HomeController@index');
 
 Route::get('/horoscope/{slug}', 'HoroscopeController@index');
 Route::get('/horoscope/{type}/{slug}', 'HoroscopeController@horoscopebytypefetch');
-Route::get('/zodiac/{special}/{slug}', 'HoroscopeController@horospecial');
+Route::get('/zodiac/{special}/{slug}/{type}', 'HoroscopeController@horospecial');
 
-Route::get('/horoscopes/{type}/{slug?}', 'HoroscopeController@horoscopebytype');
+Route::get('/horoscopes/{type}/{slug}', 'HoroscopeController@horoscopebytype');
 Route::post('/message', 'MessageController@index');
 
 Route::post('/advertise/send', 'AdvertiseController@send')->name('advertise.send');

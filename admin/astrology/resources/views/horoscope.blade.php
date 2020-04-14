@@ -58,28 +58,28 @@
                 <div class="expert">
                     <img src="{{asset('frontend/images/Finance.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">{{ucfirst($slug)}} Finance Horoscope {{date('Y')}}</h4>
-                   <a align="center" href="{{asset('/zodiac/finance/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
+                   <a align="center" href="{{asset('/zodiac/finance/'.$slug.'/'.$type)}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/Education.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">{{ucfirst($slug)}} Education Horoscope {{date('Y')}}</h4>
-                    <a align="center" href="{{asset('/zodiac/education/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
+                    <a align="center" href="{{asset('/zodiac/education/'.$slug.'/'.$type)}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/Ascendant.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">{{ucfirst($slug)}} Ascendant Horoscope {{date('Y')}}</h4>
-                     <a align="center" href="{{asset('/zodiac/ascendant/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
+                     <a align="center" href="{{asset('/zodiac/ascendant/'.$slug.'/'.$type)}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/wealth.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">{{ucfirst($slug)}} Stock Market Predictions {{date('Y')}}</h4>
-                    <a align="center" href="{{asset('/zodiac/stock_market/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
+                    <a align="center" href="{{asset('/zodiac/stock_market/'.$slug.'/'.$type)}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
                 <div class="expert">
                     <img src="{{asset('frontend/images/job.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">{{ucfirst($slug)}} Career Horoscope {{date('Y')}}</h4>
-                    <a align="center" href="{{asset('/zodiac/career/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
+                    <a align="center" href="{{asset('/zodiac/career/'.$slug.'/'.$type)}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
 
             </div>
@@ -98,21 +98,21 @@
                 <div class="expert">
                     <img src="{{asset('frontend/images/love.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">{{ucfirst($slug)}} Love Horoscope {{date('Y')}}</h4>
-                   <a align="center" href="{{asset('/zodiac/love/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
+                   <a align="center" href="{{asset('/zodiac/love/'.$slug.'/'.$type)}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/personalized-horoscope.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">{{ucfirst($slug)}} Personalized Horoscope {{date('Y')}}</h4>
-                    <a align="center" href="{{asset('/zodiac/personalized/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
+                    <a align="center" href="{{asset('/zodiac/personalized/'.$slug.'/'.$type)}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 m-t-40">
                 <div class="expert">
                     <img src="{{asset('frontend/images/Health.png')}}" alt="vasthu pandit" class="img-responsive">
                     <h4 style="color: black;">{{ucfirst($slug)}} Health Horoscope {{date('Y')}}</h4>
-                    <a align="center" href="{{asset('/zodiac/health/'.$slug.'')}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
+                    <a align="center" href="{{asset('/zodiac/health/'.$slug.'/'.$type)}}" style="border:1px solid black; background-color: yellow; color:black;">Read More</a>
                 </div>
             </div>
         </div>
