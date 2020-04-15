@@ -84,9 +84,9 @@
               
               <tr>
                 <td>{{$i}}</td>
-                <td>{{$val->title}}
+                <td>{{strip_tags($val->title)}}
                 </td>
-                <td>{{$val->description}}</td>
+                <td>{{strip_tags($val->description)}}</td>
                 <td>{{$val->types}}</td>
                 <td>{{\Carbon\Carbon::parse($val->created_at)->format('d-m-Y')}}</td>
                 <td>
