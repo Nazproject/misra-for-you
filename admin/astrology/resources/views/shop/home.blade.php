@@ -83,7 +83,7 @@
   			</div>
 			
 		    <div class="p-name" style="display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{$product->title}}</div>
-		    <div class="p-price">$99.99</div>
+		    <div class="p-price">₹{{$product->price}}</div>
 		    <!-- <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> -->
 		    <a class="p-add" href="{{asset('/shop/'.$product->category.'/'.$product->slug) }}">Buy Now</a>
 		</div>

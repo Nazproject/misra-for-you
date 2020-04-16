@@ -79,7 +79,7 @@
                                 <h3 class="wedget__title">Product Categories</h3>
                                 <ul>
                                     @foreach($category_list as $cat)
-                                    <li><a href="{{ asset('/shop/'.$cat->category) }}">{{$cat->category}} </a></li>
+                                    <li><a href="{{ asset('/shop/'.$cat->cat_slug) }}">{{$cat->category}} </a></li>
                                     @endforeach       
                                 </ul>
                             </aside>
@@ -142,9 +142,9 @@
         <div class="p-float-in">
         <img class="p-img" src="{{ asset('dist/img/product/'.$product->image) }}"/>
         <div class="p-name" style="display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{$product->title}}</div>
-        <div class="p-price">${{$product->price}}</div>
+        <div class="p-price">₹{{$product->price}}</div>
         <!-- <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> -->
-        <a class="p-add" href="{{asset('/shop/'.$product->category.'/'.$product->slug) }}">Buy Now</a>
+        <a class="p-add" href="{{asset('/shop/'.$product->cat_slug.'/'.$product->slug) }}">Buy Now</a>
         </div>
       </div>
     @endforeach
@@ -157,7 +157,7 @@
         <div class="p-name" style="display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{$product->title}}</div>
         <div class="p-price">${{$product->price}}</div>
         <!-- <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> -->
-        <a class="p-add" href="{{asset('/shop/'.$product->category.'/'.$product->slug) }}">Buy Now</a>
+        <a class="p-add" href="{{asset('/shop/'.$product->cat_slug.'/'.$product->slug) }}">Buy Now</a>
         </div>
       </div>
     @endforeach
@@ -170,7 +170,7 @@
         <div class="p-name" style="display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{$product->title}}</div>
         <div class="p-price">${{$product->price}}</div>
         <!-- <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> -->
-        <a class="p-add" href="{{asset('/shop/'.$product->category.'/'.$product->slug) }}">Buy Now</a>
+        <a class="p-add" href="{{asset('/shop/'.$product->cat_slug.'/'.$product->slug) }}">Buy Now</a>
         </div>
       </div>
     @endforeach

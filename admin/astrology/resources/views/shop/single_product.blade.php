@@ -8,6 +8,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-9 col-12">
+			
+    @if(Session::has('success'))
+    <div class="alert alert-success">
+        {{Session::get('success')}}
+    </div>
+	@endif
+
 				<div class="wn__single__product">
 					<h2>{{$product_list->title}}</h2>
 					<div class="row">
@@ -38,7 +45,7 @@
 									</ul>
 								</div> -->
 								<div class="price-box">
-									<span>${{$product_list->price}}</span>
+									<span>₹{{$product_list->price}}</span>
 								</div>
 								<div class="product__overview">
 									<p>{!!$product_list->first_description!!}</p>
@@ -243,8 +250,8 @@
 								<div class="product__content content--center">
 									<h4><a href="single-product.html" style="display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{$prod->title}}</a></h4>
 									<ul class="prize d-flex">
-										<li>${{$prod->mrp_price}}</li>
-										<li class="old_prize">${{$prod->price}}</li>
+										<li>₹{{$prod->mrp_price}}</li>
+										<li class="old_prize">₹{{$prod->price}}</li>
 									</ul>
 									<div class="action">
 										<div class="actions_inner">
@@ -465,7 +472,7 @@
 						<h3 class="wedget__title">Product Categories</h3>
 						<ul>
 							@foreach($category_list as $cat)
-							<li><a href="{{ asset('shop/'.$cat->category) }}">{{$cat->category}}</a></li>
+							<li><a href="{{ asset('shop/'.$cat->cat_slug) }}">{{$cat->category}}</a></li>
 							@endforeach
 						</ul>
 					</aside>
