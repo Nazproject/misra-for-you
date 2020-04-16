@@ -9,12 +9,11 @@
 		<div class="row">
 			<div class="col-lg-9 col-12">
 			
-    @if ($message = Session::get('success'))
-    <div class="alert alert-success alert-block">
-      <button type="button" class="close" data-dismiss="alert">×</button>
-        <strong>{{ $message }}</strong>
+    @if(Session::has('success'))
+    <div class="alert alert-success">
+        {{Session::get('success')}}
     </div>
-    @endif
+	@endif
 
 				<div class="wn__single__product">
 					<h2>{{$product_list->title}}</h2>

@@ -71,7 +71,7 @@ class CartController extends Controller
         Session::put('cart', $cart);
 /*        Session::flash('message', 'This is a message!'); 
 Session::flash('alert-class', 'alert-danger');*/ 
-        return redirect()->back()->with('success','Your request have been successfully completed.');
+        return redirect()->back()->withSuccess('Your request have been successfully completed.');
         //return Response::json(['success' => true, 'cart_items' => count(Session::get('cart')), 'message' => 'Cart updated.']);
     }
 
