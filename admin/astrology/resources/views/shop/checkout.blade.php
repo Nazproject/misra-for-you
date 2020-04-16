@@ -206,6 +206,7 @@
 					<ul class="order__total">
 						<li>Product</li>
 						<li>Total</li>
+						<li>Remove</li>
 					</ul>
 					<ul class="order_product">
 						<?php $sum=0;
@@ -213,7 +214,14 @@
 							foreach($product_list as $pro){
 						?>
 						
-						<li>{{$pro->title}}  × 1<span>${{$pro->price}}</span></li>
+						<li>{{$pro->title}}  × 1<span>₹{{$pro->price}}</span></li>
+						<form method="post" action="{{asset('/shop/removeProductFromCart')}}">
+						@csrf
+						<input type="hidden" name="pro_slug" value="{{$pro->slug}}">
+
+						<button type="submit" style="border: 1px solid black;"> X </button>	
+						</form>
+						
 						<?php $sum=$sum + $pro->price;?>
 						
 						<!-- <li>Buscipit at magna × 1<span>$48.00</span></li>
@@ -222,7 +230,7 @@
 					<?php } }else{echo "No data found";}?>
 					</ul>
 					<ul class="shipping__method">
-						<li>Cart Subtotal <span>${{$sum}}</span></li>
+						<li>Cart Subtotal <span>₹{{$sum}}</span></li>
 						<!-- <li>Shipping 
 							<ul>
 								<li>
@@ -236,9 +244,11 @@
 							</ul>
 						</li> -->
 					</ul>
+						
 					<ul class="total__amount">
-						<li>Order Total <span>${{$sum}}</span></li>
+						<li>Order Total <span>₹{{$sum}}</span></li>
 					</ul>
+				
 				</div>
 			    <div id="accordion" class="checkout_accordion mt--30" role="tablist">
 				    <div class="payment">

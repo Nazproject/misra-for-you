@@ -14,7 +14,7 @@ Auth::routes();
 //Route::post('/register/blogger', 'Auth\RegisterController@createBlogger');
 //Route::view('/home', 'home')->middleware('auth');
 Route::post('/shop/addToCart', 'shop\CartController@addToCart');
-Route::get('/shop/checkout', 'shop\CartController@index');
+Route::post('/shop/removeProductFromCart', 'shop\CartController@removeProductFromCart');
 Route::get('/shop/checkout', 'shop\CartController@index');
 Route::get('/shop/{category}/{slug}', 'shop\HomeController@single_product');
 Route::get('/shop/{category}', 'shop\HomeController@Bycategory');
