@@ -12,7 +12,7 @@
 				<nav class="mainmenu__nav">
 					<ul class="meninmenu d-flex justify-content-start">
 						<!-- <li class="drop with--one--item"><a href="index.html">Home</a></li> -->
-						<li class="drop"><a href="{{ asset('/shop') }}">Shop</a>
+						<li class="drop"><a href="{{ asset('/shops') }}">Shop</a>
 							<!--<div class="megamenu mega03">
 								<ul class="item item03">
 									<li class="title">Shop Layout</li>
@@ -42,7 +42,7 @@
 							<div class="megamenu dropdown">
 								<ul class="item item01">
 									@foreach($category_list as $cat)
-									<li><a href="{{ asset('/shop/'.$cat->category) }}">{{$cat->category}}</a></li>
+									<li><a href="{{ asset('/shop/'.$cat->cat_slug) }}">{{$cat->category}}</a></li>
 									@endforeach
 								</ul>
 							</div>
@@ -58,7 +58,9 @@
 				<ul class="header__sidebar__right d-flex justify-content-end align-items-center">
 					
 					<li class="wishlist"><a href="#"></a></li>
-					<li class="shopcart"><a href="{{asset('/shop/checkout')}}"><span class="product_qun">3</span></a>
+					<li class="shopcart"><a href="{{asset('/shop/checkout')}}"><span class="product_qun">
+						<?php echo @$cart_items;?>
+					</span></a>
 						<!-- Start Shopping Cart -->
 					<!--	<div class="block-minicart minicart__active">
 							<div class="minicart-content-wrapper">

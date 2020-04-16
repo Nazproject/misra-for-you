@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Validator;
 use DB;
 use Log;
 use Illuminate\Support\Str;
+use Session;
 class HomeController extends Controller
 {
     public function __construct()
@@ -27,12 +28,12 @@ class HomeController extends Controller
         ->select('*')
         ->get();
         $product_list = DB::table('products')
-        ->select('products.*','categories.category','carats.carat')
+        ->select('products.*','categories.category','categories.cat_slug','carats.carat')
         ->join('categories','categories.id','=','products.category_id')
         ->leftJoin('carats','carats.id','=','products.carat_id')
         ->get();
         //dd($product_list);
-        return view('shop.home', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list]);//home
+        return view('shop.home', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list, 'cart_items' => @count(Session::get('cart'))]);//home
     }
     public function Bycategory($category)
     {
@@ -42,15 +43,15 @@ class HomeController extends Controller
         ->get();
         $cat_id=DB::table('categories')
         ->select('id')
-        ->where('category', $category)
+        ->where('cat_slug', $category)
         ->first();
         $product_list = DB::table('products')
-        ->select('products.*','categories.category','carats.carat')
+        ->select('products.*','categories.category','categories.cat_slug','carats.carat')
         ->join('categories','categories.id','=','products.category_id')
         ->leftJoin('carats','carats.id','=','products.carat_id')
         ->where('category_id', $cat_id->id)
         ->get();
-        return view('shop.product_by_category', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list, 'cat_name'=>$category]);//home
+        return view('shop.product_by_category', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list, 'cat_name'=>$category, 'cart_items' => @count(Session::get('cart'))]);//home
     }
     public function single_product($category,$slug)
     {
@@ -60,22 +61,22 @@ class HomeController extends Controller
         ->get();
         $cat_id=DB::table('categories')
         ->select('id')
-        ->where('category', $category)
+        ->where('cat_slug', $category)
         ->first();
         $related_product = DB::table('products')
-        ->select('products.*','categories.category','carats.carat')
+        ->select('products.*','categories.category','categories.cat_slug','carats.carat')
         ->join('categories','categories.id','=','products.category_id')
         ->leftJoin('carats','carats.id','=','products.carat_id')
         ->where('category_id', $cat_id->id)
         ->get();
         $product_list = DB::table('products')
-        ->select('products.*','categories.category','carats.carat')
+        ->select('products.*','categories.category','categories.cat_slug','carats.carat')
         ->join('categories','categories.id','=','products.category_id')
         ->leftJoin('carats','carats.id','=','products.carat_id')
         ->where('products.category_id', $cat_id->id)
         ->where('products.slug', $slug)
         ->first();
         //dd($related_product);
-        return view('shop.single_product', ['title'=>$title, 'related_product'=>$related_product, 'category_list'=>$category_list, 'product_list'=>$product_list]);//home
+        return view('shop.single_product', ['title'=>$title, 'related_product'=>$related_product, 'category_list'=>$category_list, 'product_list'=>$product_list, 'cart_items' => @count(Session::get('cart'))]);//home
     }
 }

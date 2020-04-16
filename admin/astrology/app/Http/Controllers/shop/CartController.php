@@ -44,7 +44,7 @@ class CartController extends Controller
         /*echo "<pre>";
     	print_r($product_list);die;*/
         //dd($product_list);
-        return view('shop.checkout', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list]);//home
+        return view('shop.checkout', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list, 'cart_items' => @count(Session::get('cart'))]);//home
     }
     /**
      * Add product to the cart
@@ -69,10 +69,11 @@ class CartController extends Controller
         endif;
 
         Session::put('cart', $cart);
-        return redirect()->back()->with(['cart_items' => count(Session::get('cart')),'success' => true, 'message' => 'Cart updated.']);
+/*        Session::flash('message', 'This is a message!'); 
+Session::flash('alert-class', 'alert-danger');*/ 
+        return redirect()->back()->with('success','Your request have been successfully completed.');
         //return Response::json(['success' => true, 'cart_items' => count(Session::get('cart')), 'message' => 'Cart updated.']);
     }
-
 
 
 }

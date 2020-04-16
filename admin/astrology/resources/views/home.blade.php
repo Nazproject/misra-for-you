@@ -505,25 +505,25 @@
             <div class="row">
                 <div class="col-xs-6 col-md-3 col-sm-6 m-t-40">
                     <img src="{{ asset('frontend/images/category1.jpg') }}" class="img-responsive" alt="image-missing">
-                    <a href="#">
+                    <a href="{{ asset('/shops/Gemstones') }}">
                         <div class="card_background text-center">Gemstones</div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-sm-6 m-t-40">
                     <img src="{{ asset('frontend/images/category2.jpg') }}" class="img-responsive" alt="image-missing">
-                    <a href="#">
+                    <a href="{{ asset('/shops/Rudraksha') }}">
                         <div class="card_background text-center">Rudraksha</div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-sm-6 m-t-40">
                     <img src="{{ asset('frontend/images/category3.jpg') }}" class="img-responsive" alt="image-missing">
-                    <a href="#">
+                    <a href="{{ asset('/shops/Yantra') }}">
                         <div class="card_background text-center">Yantra</div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-sm-6 m-t-40">
                     <img src="{{ asset('frontend/images/category4.jpg') }}" class="img-responsive" alt="image-missing">
-                    <a href="#">
+                    <a href="{{ asset('/shops/NavgrahaYantra') }}">
                         <div class="card_background text-center">Navgraha Yantra</div>
                     </a>
                 </div>
@@ -533,25 +533,25 @@
              <div class="row">
                 <div class="col-xs-6 col-md-3 col-sm-6 m-t-40">
                     <img src="{{ asset('frontend/images/category5.jpg') }}" class="img-responsive" alt="image-missing">
-                    <a href="#">
+                    <a href="{{ asset('/shops/Mala') }}">
                         <div class="card_background text-center">Mala</div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-sm-6 m-t-40">
                     <img src="{{ asset('frontend/images/category6.jpg') }}" class="img-responsive" alt="image-missing">
-                    <a href="#">
+                    <a href="{{ asset('/shops/Jadi') }}">
                         <div class="card_background text-center">Jadi</div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-sm-6 m-t-40">
                     <img src="{{ asset('frontend/images/category7.jpg') }}" class="img-responsive" alt="image-missing">
-                    <a href="#">
+                    <a href="{{ asset('/shops/Miscellaneous') }}">
                         <div class="card_background text-center">Feng Shui Items</div>
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-3 col-sm-6 m-t-40">
                     <img src="{{ asset('frontend/images/category8.jpg') }}" class="img-responsive" alt="image-missing">
-                    <a href="#">
+                    <a href="{{ asset('/shops/Miscellaneous') }}">
                         <div class="card_background text-center">Miscellaneous</div>
                     </a>
                 </div><br><br><br>
@@ -560,7 +560,7 @@
             </div>
             <br>
             <br>
- <center>  <a href=""> <p style="color: white; font-weight:700; border:1px solid white; height:40px; width: 100px; padding-top:5px;">Shop More</p></center>
+ <center>  <a href="{{ asset('/shops') }}"> <p style="color: white; font-weight:700; border:1px solid white; height:40px; width: 100px; padding-top:5px;">Shop More</p></center>
               
             <br>
             <br>

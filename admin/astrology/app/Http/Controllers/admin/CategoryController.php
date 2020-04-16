@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\admin;
-
+use App\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 use DB;
 use Log;
 
@@ -61,6 +62,7 @@ class CategoryController extends Controller
         }
         $insert_arr=array(
             'category' => $data['category'],
+            'cat_slug' => SlugService::createSlug(Category::class, 'cat_slug', $data['category']),
             'created_at' => date('Y-m-d H:i')
         );
         //print_r($insert_arr);die;
@@ -103,6 +105,7 @@ class CategoryController extends Controller
         }         
         DB::table('categories')->where('id',$request->id)->update([
         'category' =>$request->category,
+        'cat_slug' => SlugService::createSlug(Category::class, 'cat_slug', $request->category),
         'updated_at' => date('Y-m-d H:i')
          ]);
         //return back()->with('success', 'Horoscope updated successfully');
