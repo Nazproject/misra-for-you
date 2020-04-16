@@ -199,10 +199,10 @@
                                     class="caret"></span></a>
                             <ul class="dropdown-menu dropdown_mod" data-dropdown-in="fadeInUp"
                                 data-dropdown-out="fadeOut">
-                                <li><a href="{{asset('/horoscopes/daily')}}">{{__('msg.Daily')}} {{__('msg.Horoscope')}}</a></li>
-                                <li><a href="{{asset('/horoscopes/weekly')}}">{{__('msg.Weekly')}} {{__('msg.Horoscope')}}</a></li>
-                                <li><a href="{{asset('/horoscopes/monthly')}}">{{__('msg.Monthly')}} {{__('msg.Horoscope')}}</a></li>
-                                <li><a href="{{asset('/horoscopes/yearly')}}">{{__('msg.Yearly')}} {{__('msg.Horoscope')}}</a></li>
+                                <li><a href="{{asset('/horoscope/daily')}}">{{__('msg.Daily')}} {{__('msg.Horoscope')}}</a></li>
+                                <li><a href="{{asset('/horoscope/weekly')}}">{{__('msg.Weekly')}} {{__('msg.Horoscope')}}</a></li>
+                                <li><a href="{{asset('/horoscope/monthly')}}">{{__('msg.Monthly')}} {{__('msg.Horoscope')}}</a></li>
+                                <li><a href="{{asset('/horoscope/yearly')}}">{{__('msg.Yearly')}} {{__('msg.Horoscope')}}</a></li>
                                 
                                 
                             </ul>
