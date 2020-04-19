@@ -8,12 +8,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-9 col-12">
+
+				<?php echo @$cart_message;//echo "<pre>";print_r(Session::all());?>
 			
-    @if(Session::has('success'))
+    <!-- @if(Session::has('message'))
     <div class="alert alert-success">
-        {{Session::get('success')}}
+        {{Session::get('message')}}
     </div>
-	@endif
+	@endif -->
 
 				<div class="wn__single__product">
 					<h2>{{$product_list->title}}</h2>

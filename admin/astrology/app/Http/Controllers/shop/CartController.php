@@ -69,11 +69,33 @@ class CartController extends Controller
         endif;
 
         Session::put('cart', $cart);
-/*        Session::flash('message', 'This is a message!'); 
+/* 
+Session::flash('message', 'This is a message!'); 
+        Session::save();
+        dd(Session::all());
+        return redirect()->back();
+
+       Session::flash('message', 'This is a message!'); 
 Session::flash('alert-class', 'alert-danger');*/ 
-        return redirect()->back()->withSuccess('Your request have been successfully completed.');
+        return redirect()->back()->with(['cart_items' => count(Session::get('cart')),'success' => true, 'cart_message' => 'Cart updated.']);
         //return Response::json(['success' => true, 'cart_items' => count(Session::get('cart')), 'message' => 'Cart updated.']);
     }
+    public function removeProductFromCart(Request $request)
+    {
+         // $product = $request->product;
+        $id = $request->pro_slug;
+        ///
 
+        // Get the product array
+        $cart = Session::get('cart');
+        unset($cart[$id]);
+        //print_r($cart);die;
+        // Unset the first index (or provide an index)
+         
+
+        // Overwrite the product session
+        Session::put('cart', $cart);
+        return redirect()->back()->with(['cart_items' => count(Session::get('cart')),'success' => true, 'cart_message' => 'Cart removed.']);
+    }
 
 }
