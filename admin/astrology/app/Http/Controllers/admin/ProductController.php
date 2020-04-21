@@ -77,6 +77,17 @@ class ProductController extends Controller
             $file = $request->file('image') ;
             $fileName = time()."_".$file->getClientOriginalName() ;
             $destinationPath = public_path().'/dist/img/product/' ;
+            if(@count($data['zodiac_sign'])>0){
+                $zod_count=1;
+            }else{
+                $zod_count=0;
+            }
+            if(@$data['planet']!=""){
+                $plan_count=1;
+            }else{
+                $plan_count=0;
+            }
+
             $insert_arr=array(
             'title' => $data['title'],
             'slug' => SlugService::createSlug(Product::class, 'slug', $data['title']),
@@ -93,6 +104,8 @@ class ProductController extends Controller
             'faq' => $data['faq'],
             'planet' => $data['planet'],
             'zodiac_sign' => @json_encode($data['zodiac_sign']),
+            'zodiac_sign_check' => $zod_count,
+            'planet_check' => $plan_count,
             'top_selling' => $data['top_selling'],
             'stock' => $data['stock'],
             'product_count' => $data['product_count'],
@@ -171,6 +184,16 @@ class ProductController extends Controller
         }else{
             $fileName=$request->old_image;
         }
+        if(@count($data['zodiac_sign'])>0){
+                $zod_count=1;
+            }else{
+                $zod_count=0;
+            }
+            if(@$data['planet']!=""){
+                $plan_count=1;
+            }else{
+                $plan_count=0;
+            }
         $up_arr=array(
             'title' => $data['title'],
             'slug' => SlugService::createSlug(Product::class, 'slug', $data['title']),
@@ -187,6 +210,8 @@ class ProductController extends Controller
             'faq' => $data['faq'],
             'planet' => $data['planet'],
             'zodiac_sign' => json_encode($data['zodiac_sign']),
+            'zodiac_sign_check' => $zod_count,
+            'planet_check' => $plan_count,
             'top_selling' => $data['top_selling'],
             'stock' => $data['stock'],
             'product_count' => $data['product_count'],

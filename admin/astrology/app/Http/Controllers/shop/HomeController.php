@@ -51,7 +51,25 @@ class HomeController extends Controller
         ->leftJoin('carats','carats.id','=','products.carat_id')
         ->where('category_id', $cat_id->id)
         ->get();
-        return view('shop.product_by_category', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list, 'cat_name'=>$category, 'cart_items' => @count(Session::get('cart'))]);//home
+        //DB::enableQueryLog();
+        $product_zod = DB::table('products')
+        ->select('products.*','categories.category','categories.cat_slug','carats.carat')
+        ->join('categories','categories.id','=','products.category_id')
+        ->leftJoin('carats','carats.id','=','products.carat_id')
+        ->where('products.category_id', $cat_id->id)
+        ->where('products.zodiac_sign_check','=' , 1)
+        ->get();
+        $product_planet = DB::table('products')
+        ->select('products.*','categories.category','categories.cat_slug','carats.carat')
+        ->join('categories','categories.id','=','products.category_id')
+        ->leftJoin('carats','carats.id','=','products.carat_id')
+        ->where('products.category_id', $cat_id->id)
+        ->where('products.planet_check','=' , 1)
+        ->get();
+        //dd(DB::getQueryLog());
+        /*echo "<pre>";
+        print_r($product_zod);die;*/
+        return view('shop.product_by_category', ['title'=>$title, 'category_list'=>$category_list, 'product_list'=>$product_list, 'cat_name'=>$category, 'cart_items' => @count(Session::get('cart')), 'product_zod'=>$product_zod, 'product_planet'=>$product_planet]);//home
     }
     public function single_product($category,$slug)
     {

@@ -148,8 +148,9 @@
         </div>
       </div>
     @endforeach
+    <?php if(count($product_zod) > 0){?>
     <h2> Recommendation As Per Zodiac Sign</h2>
-    @foreach($product_list as $product)                    
+    @foreach($product_zod as $product)                    
       <div class="p-float">
         <div class="p-float-in">
         <div class="p-name"><?php $zod=json_decode(@$product->zodiac_sign, true); echo @$zod[0];?></div>    
@@ -161,8 +162,12 @@
         </div>
       </div>
     @endforeach
+  <?php }
+
+    if(count($product_planet) > 0){
+  ?>
   <h2>Recommendation As Per Astrological Planet</h2>
-    @foreach($product_list as $product)                    
+    @foreach($product_planet as $product)                    
       <div class="p-float">
         <div class="p-float-in">
         <div class="p-name">{{$product->planet}}</div>    
@@ -174,6 +179,7 @@
         </div>
       </div>
     @endforeach
+  <?php }?>
             </div>
         </div>
     </div>
