@@ -88,6 +88,7 @@
 										<a href="#">Kids' Music</a>
 									</span>
 								</div> -->
+								<?php if($product_list->carat_id !=""){?>
 								<div class="product-share">
 									<ul>
 										<li class="categories-title">Choose Carat :</li>
@@ -105,6 +106,7 @@
 										</li>
 									</ul>
 								</div>
+								<?php }?>
 							</div>
 						</div>
 					</div>

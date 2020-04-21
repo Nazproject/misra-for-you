@@ -81,7 +81,7 @@
                     </a>
                 </div>
                 <div class="col-sm-2 col-xs-2 text-center head_signs">
-                    <a href="{{ asset('/shop') }}">
+                    <a href="{{ asset('/shops') }}">
                         <div class="bg-info header_bg center-block">
                             <img src="{{ asset('frontend/images/shop5.png') }}" alt="Image missing">
                         </div>
